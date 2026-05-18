@@ -12,10 +12,12 @@ const currentPage = location.pathname.split('/').pop() || 'index.html';
 function Header() {
   return `
   <header class="site-header">
-    <div class="container">
-      <a href="index.html" class="brand">Bloom Clan</a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">Menu</button>
-      <nav class="nav-links" id="navLinks">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Bloom Clan home">
+        <img src="assets/bloom-clan-logo.svg" alt="Bloom Clan logo" class="brand-logo" width="240" height="60" />
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
         ${navItems.map((n) => `<a href="${n.href}" class="${currentPage === n.href ? 'active' : ''}">${n.label}</a>`).join('')}
       </nav>
     </div>
@@ -23,7 +25,7 @@ function Header() {
 }
 
 function Footer() {
-  return `<footer class="site-footer"><div class="container"><div><strong>Bloom Clan</strong><div class="small">Handmade details. Elevated living.</div></div><div class="small">© ${new Date().getFullYear()} Bloom Clan</div></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-grid"><section><img src="assets/bloom-clan-logo.svg" alt="Bloom Clan logo" class="footer-logo" width="220" height="55" /><p class="small">Handmade details, botanical calm, and premium editorial craftsmanship for meaningful gifting and home styling.</p></section><section><h3>Studio</h3><ul><li>Small-batch handmade collections</li><li>Custom gifting design</li><li>Seasonal botanical curation</li></ul></section><section><h3>Visit</h3><p class="small">By appointment only<br/>United States</p><p class="small">© ${new Date().getFullYear()} Bloom Clan Atelier</p></section></div></footer>`;
 }
 
 function SectionTitle(title, subtitle) {
@@ -60,5 +62,8 @@ document.addEventListener('DOMContentLoaded', () => {
   document.body.insertAdjacentHTML('beforeend', Footer());
   const toggle = document.getElementById('menuToggle');
   const nav = document.getElementById('navLinks');
-  toggle?.addEventListener('click', () => nav.classList.toggle('show'));
+  toggle?.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('show');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
 });
