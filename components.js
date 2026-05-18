@@ -15,7 +15,7 @@ function Header() {
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="Bloom Clan home">
         <span class="brand-logo-wrap" aria-hidden="true">
-          <img src="assets/logo/bloom clan logo.jpeg" alt="Bloom Clan logo" class="brand-logo" width="96" height="96" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+          <img src="assets/logo/BloomClan Logo.png" alt="Bloom Clan logo" class="brand-logo" width="96" height="96" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
           <span class="brand-logo-fallback" style="display:none;">Bloom Clan</span>
         </span>
         <span class="brand-text-wrap">
