@@ -1,14 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Parisienne&display=swap");
+
 :root {
-  --ivory: #f7f2e9;
-  --warm-ivory: #fbf7f0;
-  --sage: #8f9c87;
-  --sage-deep: #77846f;
-  --beige: #d8c9b3;
-  --muted-gold: #b59a63;
-  --ink: #2f2a26;
-  --muted-ink: #6f685f;
-  --surface: #fffdf8;
-  --border: #e6dac9;
+  --ivory: #f3eee3;
+  --warm-ivory: #f7f0e5;
+  --sage: #8f9a7a;
+  --sage-deep: #6f795f;
+  --beige: #d9c8ad;
+  --muted-gold: #a98a57;
+  --ink: #3b2f26;
+  --muted-ink: #7a6b5b;
+  --surface: #f8f2e8;
+  --border: #ddcfba;
   --radius: 20px;
   --shadow: 0 14px 35px rgba(65, 56, 47, 0.1);
 }
@@ -16,7 +18,7 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: "Inter", "Segoe UI", sans-serif;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
   color: var(--ink);
   line-height: 1.75;
   background:
@@ -34,7 +36,7 @@ a { color: inherit; text-decoration: none; }
   top: 0;
   z-index: 20;
   backdrop-filter: blur(12px);
-  background: color-mix(in oklab, var(--warm-ivory) 94%, white);
+  background: color-mix(in oklab, var(--warm-ivory) 90%, #f0e3d2);
   border-bottom: 1px solid color-mix(in oklab, var(--border) 84%, #ffffff);
   box-shadow: 0 8px 24px rgba(61, 49, 37, 0.08);
 }
@@ -54,7 +56,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand-logo-wrap {
-  height: 52px;
+  height: 64px;
   width: auto;
   overflow: hidden;
   display: inline-flex;
@@ -77,7 +79,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(0.4rem, 0.55rem + 0.1vw, 0.5rem);
   line-height: 1.1;
   letter-spacing: 0.03em;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--sage-deep);
 }
 .brand-text-wrap {
@@ -86,23 +88,26 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.05;
 }
 .brand-name {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.08rem, 1.2rem + 0.25vw, 1.45rem);
-  letter-spacing: 0.04em;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
+  font-size: clamp(1.2rem, 1.32rem + 0.35vw, 1.68rem);
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   font-weight: 600;
 }
 .brand-tagline {
-  font-size: clamp(0.64rem, 0.62rem + 0.2vw, 0.78rem);
-  letter-spacing: 0.11em;
-  color: var(--muted-ink);
-  text-transform: uppercase;
+  font-family: "Parisienne", "Brush Script MT", cursive;
+  font-size: clamp(0.72rem, 0.75rem + 0.2vw, 0.9rem);
+  letter-spacing: 0.02em;
+  color: color-mix(in oklab, var(--muted-gold) 74%, var(--ink));
+  text-transform: none;
+  font-weight: 500;
+  margin-top: 0.1rem;
 }
 
 .menu-toggle {
   display: none;
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 90%, var(--warm-ivory));
   color: var(--ink);
   padding: 0.55rem 0.9rem;
   border-radius: 10px;
@@ -111,8 +116,8 @@ a { color: inherit; text-decoration: none; }
 .nav-links a {
   padding: 0.55rem 0.85rem;
   border-radius: 999px;
-  color: var(--muted-ink);
-  font-weight: 500;
+  color: color-mix(in oklab, var(--muted-ink) 86%, var(--ink));
+  font-weight: 600;
   letter-spacing: 0.01em;
   transition: color 220ms ease, background-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
 }
@@ -130,7 +135,7 @@ a { color: inherit; text-decoration: none; }
 
 main { padding: 4.8rem 0 5.6rem; }
 .hero {
-  background: linear-gradient(120deg, #f6efe3, #efe4d2);
+  background: linear-gradient(120deg, #f3e8d7, #e8dbc7);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -138,7 +143,7 @@ main { padding: 4.8rem 0 5.6rem; }
 }
 .hero-inner { display: grid; grid-template-columns: 1.16fr 1fr; gap: 3.25rem; align-items: center; padding: clamp(2.2rem, 5vw, 4.6rem); min-height: clamp(480px, 62vh, 720px); }
 .hero h1 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.02em;
@@ -153,8 +158,8 @@ main { padding: 4.8rem 0 5.6rem; }
 
 .cta-btn {
   display: inline-block;
-  background: linear-gradient(160deg, var(--muted-gold), #a1834f);
-  color: #fff;
+  background: linear-gradient(160deg, var(--muted-gold), #927449);
+  color: #f6efe4;
   padding: 0.94rem 1.48rem;
   border-radius: 999px;
   font-weight: 600;
@@ -166,7 +171,7 @@ main { padding: 4.8rem 0 5.6rem; }
 
 .card-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.35rem, 2vw, 2.2rem); }
 .product-card {
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 90%, var(--warm-ivory));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -184,7 +189,7 @@ main { padding: 4.8rem 0 5.6rem; }
 .gallery-grid img:hover { transform: scale(1.02); }
 
 .copy, .form-card {
-  background: var(--surface);
+  background: color-mix(in oklab, var(--surface) 90%, var(--warm-ivory));
   padding: clamp(1.35rem, 2vw, 2rem);
   border-radius: var(--radius);
   border: 1px solid var(--border);
@@ -204,7 +209,7 @@ input, textarea, select {
 textarea { min-height: 130px; resize: vertical; }
 
 .site-footer {
-  background: linear-gradient(150deg, #332c27, #2a2521);
+  background: linear-gradient(150deg, #3c2f25, #332820);
   color: #f4e9dd;
   padding: 3.1rem 0;
   border-top: 1px solid rgba(181, 154, 99, 0.4);
@@ -217,9 +222,9 @@ textarea { min-height: 130px; resize: vertical; }
 
 @media (max-width: 960px) {
   .header-inner { min-height: 78px; }
-  .brand-logo-wrap { height: 46px; }
-  .brand-name { font-size: clamp(1rem, 2.8vw, 1.2rem); }
-  .brand-tagline { font-size: clamp(0.6rem, 1.5vw, 0.72rem); letter-spacing: 0.09em; }
+  .brand-logo-wrap { height: 56px; }
+  .brand-name { font-size: clamp(1.05rem, 2.9vw, 1.28rem); }
+  .brand-tagline { font-size: clamp(0.64rem, 1.8vw, 0.78rem); }
   .hero-inner { grid-template-columns: 1fr; min-height: auto; gap: 2rem; padding: clamp(1.5rem, 6vw, 2.8rem); }
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .gallery-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -228,16 +233,16 @@ textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 700px) {
   .header-inner { min-height: 72px; padding: 0.7rem 0; }
   .brand { gap: 0.55rem; }
-  .brand-logo-wrap { height: 40px; }
-  .brand-name { font-size: 0.96rem; letter-spacing: 0.035em; }
-  .brand-tagline { font-size: 0.57rem; letter-spacing: 0.085em; }
+  .brand-logo-wrap { height: 50px; }
+  .brand-name { font-size: 1rem; letter-spacing: 0.05em; }
+  .brand-tagline { font-size: 0.62rem; }
   .menu-toggle { display: block; margin-left: auto; }
   .nav-links {
     display: none;
     position: absolute;
     right: 4%;
     top: calc(100% - 6px);
-    background: var(--surface);
+    background: color-mix(in oklab, var(--surface) 90%, var(--warm-ivory));
     border: 1px solid var(--border);
     border-radius: 14px;
     box-shadow: var(--shadow);
