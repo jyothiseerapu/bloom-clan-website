@@ -19,7 +19,7 @@ function Header() {
           <span class="brand-logo-fallback" style="display:none;">Bloom Clan</span>
         </span>
         <span class="brand-text-wrap">
-          <span class="brand-name">Bloom Clan</span>
+          <span class="brand-name">BLOOM CLAN</span>
           <span class="brand-tagline">stories curated with love</span>
         </span>
       </a>
@@ -32,7 +32,7 @@ function Header() {
 }
 
 function Footer() {
-  return `<footer class="site-footer"><div class="container footer-grid"><section><img src="assets/bloom-clan-logo.svg" alt="Bloom Clan logo" class="footer-logo" width="220" height="55" /><p class="small">Handmade details, botanical calm, and premium editorial craftsmanship for meaningful gifting and home styling.</p></section><section><h3>Studio</h3><ul><li>Small-batch handmade collections</li><li>Custom gifting design</li><li>Seasonal botanical curation</li></ul></section><section><h3>Visit</h3><p class="small">By appointment only<br/>United States</p><p class="small">© ${new Date().getFullYear()} Bloom Clan Atelier</p></section></div></footer>`;
+  return `<footer class="site-footer"><div class="container footer-grid"><section><h3>About Bloom Clan</h3><p class="small">Tiny treasures, nostalgic stories, and handcrafted moments curated with love.</p><p class="small">A quiet creative studio where keepsakes, plants, toys, and paper stories are gathered with heart.</p></section><section><h3>Stories & Curations</h3><ul><li><a href="products.html">Tiny Treasures</a></li><li><a href="products.html">Shelf Stories</a></li><li><a href="products.html">Seasonal Stories</a></li><li><a href="gallery.html">Curated Corners</a></li></ul></section><section><h3>Custom Orders</h3><p class="small">For bespoke gifting stories, message us through our custom order form or Instagram direct message.</p><p class="small"><a href="custom-orders.html">Start a custom order</a></p></section><section><h3>Instagram / Community</h3><p class="small"><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer">@bloomclan_stories</a></p><p class="small">© ${new Date().getFullYear()} Bloom Clan Atelier</p></section></div></footer>`;
 }
 
 function SectionTitle(title, subtitle) {

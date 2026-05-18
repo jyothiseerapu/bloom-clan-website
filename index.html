@@ -11,8 +11,8 @@
     <section class="hero">
       <div class="hero-inner">
         <div>
-          <h1>Handmade Luxury for Beautiful Everyday Living</h1>
-          <p class="lead">Bloom Clan creates elegant, artisan-crafted pieces that bring warmth, character, and premium detail into your home and gifting moments.</p>
+          <h1>A Curated World of Tiny Treasures & Stories</h1>
+          <p class="lead">Bloom Clan gathers nostalgic toys, tiny green things, painted cards, and story-filled keepsakes for homes that hold memory and heart.</p>
           <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem;" id="heroActions"></div>
         </div>
         <img src="https://picsum.photos/seed/editorial-lifestyle-studio/900/700" alt="Soft handmade editorial lifestyle with keepsakes and plants" />
@@ -47,12 +47,12 @@
   <script src="components.js"></script>
   <script>
     document.getElementById('heroActions').innerHTML =
-      CTAButton('Shop Collections', 'products.html') +
+      CTAButton('Explore Tiny Treasures', 'products.html') +
       CTAButton('Custom Orders', 'custom-orders.html');
 
     document.getElementById('featuredTitle').innerHTML = SectionTitle(
-      'Featured Collections',
-      'A curated selection of our most-loved handcrafted pieces.'
+      'Found With Love',
+      'An editorial curation of tiny treasures, nostalgic finds, and heartfelt keepsakes.'
     );
 
     const featured = [
@@ -63,8 +63,8 @@
     document.getElementById('featuredGrid').innerHTML = featured.map(ProductCard).join('');
 
     document.getElementById('plantsTitle').innerHTML = SectionTitle(
-      'Plants & Green Gifts',
-      'Gift-ready greenery and handcrafted plant pieces for calm, joyful spaces.'
+      'Little Living Things',
+      'Soft greenery and quiet corners for shelves, windows, and warm gifting moments.'
     );
 
     const plants = [
