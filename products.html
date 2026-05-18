@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Products | Bloom Clan Atelier</title><link rel="stylesheet" href="styles.css"/></head><body>
+<main class="container">
+  <div id="title"></div>
+  <section class="card-grid" id="productsGrid"></section>
+</main>
+<script src="components.js"></script>
+<script>
+  document.getElementById('title').innerHTML = SectionTitle('Products & Collections', 'Curated handmade pieces for gifting and living beautifully.');
+  const products = [
+    { image: 'https://picsum.photos/seed/linen/600/460', name: 'Linen Serenity Set', description: 'Soft neutrals and hand-stitched details for elegant tablescapes.', price: '$78' },
+    { image: 'https://picsum.photos/seed/candle/600/460', name: 'Golden Hour Candles', description: 'Small-batch soy candles poured with warm signature fragrances.', price: '$34' },
+    { image: 'https://picsum.photos/seed/ceramic/600/460', name: 'Earth Clay Collection', description: 'Hand-formed ceramic accents with premium matte glazes.', price: '$96' },
+    { image: 'https://picsum.photos/seed/ribbon/600/460', name: 'Heirloom Gift Box', description: 'A refined gift bundle wrapped with artisan ribbon and dried florals.', price: '$64' },
+    { image: 'https://picsum.photos/seed/woven/600/460', name: 'Woven Bloom Basket', description: 'Natural woven textures styled for seasonal displays.', price: '$52' },
+    { image: 'https://picsum.photos/seed/soap/600/460', name: 'Botanical Bath Ritual', description: 'Handcrafted soaps and oils for a luxurious self-care ritual.', price: '$48' }
+  ];
+  document.getElementById('productsGrid').innerHTML = products.map(ProductCard).join('');
+</script>
+</body></html>
