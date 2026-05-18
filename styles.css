@@ -142,6 +142,7 @@ main { padding: 4.8rem 0 5.6rem; }
   box-shadow: var(--shadow);
 }
 .hero-inner { display: grid; grid-template-columns: 1.16fr 1fr; gap: 3.25rem; align-items: center; padding: clamp(2.2rem, 5vw, 4.6rem); min-height: clamp(480px, 62vh, 720px); }
+.hero-inner > img { width: 100%; max-height: clamp(320px, 56vh, 640px); object-fit: contain; object-position: center; border-radius: 16px; background: rgba(255,255,255,0.28); padding: clamp(0.4rem, 1vw, 0.8rem); }
 .hero h1 {
   color: color-mix(in oklab, var(--ink) 90%, #5a4433);
   font-family: "Cormorant Garamond", "Times New Roman", serif;
@@ -181,12 +182,13 @@ main { padding: 4.8rem 0 5.6rem; }
   height: 100%;
 }
 .product-card:hover { transform: translateY(-5px); box-shadow: 0 16px 34px rgba(65, 56, 47, 0.14); }
+.product-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; object-position: center; background: color-mix(in oklab, var(--warm-ivory) 94%, white); padding: 0.5rem; }
 .product-card .content { padding: 1.5rem 1.5rem 1.35rem; }
 .product-card h3 { margin: 0 0 0.5rem; font-family: Georgia, serif; font-size: clamp(1.28rem, 2vw, 1.6rem); line-height: 1.25; }
 .price { color: var(--sage-deep); font-weight: 700; font-size: 1.05rem; }
 
 .gallery-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
-.gallery-grid img { border-radius: 14px; aspect-ratio: 1; object-fit: cover; border: 1px solid var(--border); transition: transform 220ms ease; }
+.gallery-grid img { border-radius: 14px; aspect-ratio: 1; object-fit: contain; object-position: center; background: color-mix(in oklab, var(--warm-ivory) 94%, white); padding: 0.35rem; border: 1px solid var(--border); transition: transform 220ms ease; }
 .gallery-grid img:hover { transform: scale(1.02); }
 
 .copy, .form-card {

@@ -6,7 +6,20 @@
 <script src="components.js"></script>
 <script>
   document.getElementById('title').innerHTML = SectionTitle('Gallery', 'A peek into our handcrafted world.');
-  const images = Array.from({length: 12}, (_, i) => `https://picsum.photos/seed/gallery${i+1}/600/600`);
+  const images = [
+    'assets/images/hero-story-card.png',
+    'assets/images/handmade-cards.png',
+    'assets/images/stickers-doodles.png',
+    'assets/images/mini-story-card.png',
+    'assets/images/christmas-stories.png',
+    'assets/images/kondapalli-toys.png',
+    'assets/images/plant corner.png',
+    'assets/images/gift-wrapping.png',
+    'assets/images/hero-story-card.png',
+    'assets/images/handmade-cards.png',
+    'assets/images/plant corner.png',
+    'assets/images/kondapalli-toys.png'
+  ];
   document.getElementById('gallery').innerHTML = GalleryGrid(images);
 </script>
 </body></html>
