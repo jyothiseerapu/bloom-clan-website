@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Gallery | Bloom Clan</title><link rel="stylesheet" href="styles.css"/></head><body>
+<main class="container">
+  <div id="title"></div>
+  <section id="gallery"></section>
+</main>
+<script src="components.js"></script>
+<script>
+  document.getElementById('title').innerHTML = SectionTitle('Gallery', 'A peek into our handcrafted world.');
+  const images = Array.from({length: 12}, (_, i) => `https://picsum.photos/seed/gallery${i+1}/600/600`);
+  document.getElementById('gallery').innerHTML = GalleryGrid(images);
+</script>
+</body></html>
