@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>Products | Bloom Clan</title><link rel="stylesheet" href="styles.css"/></head><body>
+<main class="container">
+  <div id="title"></div>
+  <section class="card-grid" id="productsGrid"></section>
+  <div id="plantsCollectionTitle"></div>
+  <section class="card-grid" id="plantsCollectionGrid"></section>
+</main>
+<script src="components.js"></script>
+<script>
+  document.getElementById('title').innerHTML = SectionTitle('Bloom Clan Products & Collections', 'Thoughtful gifting, keepsakes, cards, and handmade presentation pieces.');
+  const products = [
+    { image: 'https://picsum.photos/seed/linen/600/460', name: 'Keepsake Card Suite', description: 'Hand-finished cards designed for warm, meaningful messages.', price: '$28' },
+    { image: 'https://picsum.photos/seed/candle/600/460', name: 'Golden Hour Candle Pair', description: 'Small-batch soy candles for cozy gifting rituals.', price: '$34' },
+    { image: 'https://picsum.photos/seed/ceramic/600/460', name: 'Handmade Keepsake Tray', description: 'A premium ceramic accent for cards, jewelry, and notes.', price: '$46' },
+    { image: 'https://picsum.photos/seed/ribbon/600/460', name: 'Thoughtful Gift Box', description: 'Curated presentation details with artisan ribbon and florals.', price: '$64' },
+    { image: 'https://picsum.photos/seed/woven/600/460', name: 'Woven Memory Basket', description: 'Natural textures styled for heartfelt gifting arrangements.', price: '$52' },
+    { image: 'https://picsum.photos/seed/soap/600/460', name: 'Gentle Ritual Set', description: 'Soft self-care essentials finished with handmade touches.', price: '$48' }
+  ];
+  document.getElementById('productsGrid').innerHTML = products.map(ProductCard).join('');
+
+  document.getElementById('plantsCollectionTitle').innerHTML = SectionTitle('Plants & Green Gifts', 'Soft editorial botanicals for thoughtful everyday gifting.');
+  const plantCollection = [
+    { image: 'https://picsum.photos/seed/planta/600/460', name: 'Small Indoor Plants', description: 'Quiet greenery to soften bedside tables and reading nooks.', price: '$24' },
+    { image: 'https://picsum.photos/seed/plantb/600/460', name: 'Ceramic Plant Pots', description: 'Earth-toned pots crafted to complement warm interiors.', price: '$32' },
+    { image: 'https://picsum.photos/seed/plantc/600/460', name: 'Giftable Plant Arrangements', description: 'Ready-to-gift plant pairings with handcrafted finishing.', price: '$58' },
+    { image: 'https://picsum.photos/seed/plantd/600/460', name: 'Desk Plants', description: 'Petite plants for calm desks and thoughtful workday gifting.', price: '$21' },
+    { image: 'https://picsum.photos/seed/plante/600/460', name: 'Handmade Plant Gift Bundles', description: 'Plants, cards, and wrapping details in one premium bundle.', price: '$64' }
+  ];
+  document.getElementById('plantsCollectionGrid').innerHTML = plantCollection.map(ProductCard).join('');
+</script>
+</body></html>
