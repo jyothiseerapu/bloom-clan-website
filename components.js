@@ -14,7 +14,10 @@ function Header() {
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="Bloom Clan home">
-        <img src="assets/logo/bloom-clan-logo.svg" alt="Bloom Clan logo" class="brand-logo" width="180" height="180" />
+        <span class="brand-logo-wrap" aria-hidden="true">
+          <img src="assets/logo/bloom clan logo.jpeg" alt="Bloom Clan logo" class="brand-logo" width="96" height="96" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';" />
+          <span class="brand-logo-fallback" style="display:none;">Bloom Clan</span>
+        </span>
         <span class="brand-text-wrap">
           <span class="brand-name">Bloom Clan</span>
           <span class="brand-tagline">Handcrafted Botanical Atelier</span>
