@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bloom Clan | Handmade Gifts, Keepsakes & Plants</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <h1>Handmade gifts, keepsakes, and green details for calm, heartfelt moments</h1>
+          <p class="lead">Bloom Clan curates cards, keepsakes, plant gifts, and softly wrapped bundles with an editorial warmth made for thoughtful giving.</p>
+          <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem;" id="heroActions"></div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80" alt="Editorial handmade lifestyle arrangement with gifts and cards" />
+      </div>
+    </section>
+
+    <section>
+      <div id="featuredTitle"></div>
+      <div class="card-grid" id="featuredGrid"></div>
+    </section>
+
+    <section class="section-soft">
+      <div id="plantsTitle"></div>
+      <div class="card-grid" id="plantsGrid"></div>
+    </section>
+
+    <section>
+      <div id="aboutTitle"></div>
+      <article class="copy">
+        <p>We are a family-led studio devoted to heartfelt details—thoughtful presentation, hand-finished cards, keepsake wrapping, and artisan touches that make every gift feel truly remembered.</p>
+        <div style="margin-top:.8rem" id="aboutAction"></div>
+      </article>
+    </section>
+
+    <section>
+      <div id="galleryTitle"></div>
+      <div id="galleryPreview"></div>
+      <div style="margin-top:1rem; text-align:center;" id="galleryAction"></div>
+    </section>
+  </main>
+
+  <script src="components.js"></script>
+  <script>
+    document.getElementById('heroActions').innerHTML =
+      CTAButton('Shop Collections', 'products.html') + CTAButton('Custom Orders', 'custom-orders.html');
+
+    document.getElementById('featuredTitle').innerHTML = SectionTitle(
+      'Featured Collections',
+      'Handmade gifting and keepsake essentials for meaningful occasions.'
+    );
+
+    const featured = [
+      { image: 'https://picsum.photos/seed/featured1/600/460', name: 'Signature Keepsake Box', description: 'Premium wrapping, hand-tied ribbons, and a calm editorial palette.', price: '$88' },
+      { image: 'https://picsum.photos/seed/featured2/600/460', name: 'Artisan Candle & Card Pairing', description: 'A soft fragrance and handwritten-note inspired presentation.', price: '$39' },
+      { image: 'https://picsum.photos/seed/featured3/600/460', name: 'Thoughtful Celebration Bundle', description: 'Elegant gifting pieces arranged for timeless, heartfelt moments.', price: '$72' }
+    ];
+    document.getElementById('featuredGrid').innerHTML = featured.map(ProductCard).join('');
+
+    document.getElementById('plantsTitle').innerHTML = SectionTitle(
+      'Plants & Green Gifts',
+      'Earthy, premium-minimal plant gifting with a warm handmade feel.'
+    );
+    const plants = [
+      { image: 'https://picsum.photos/seed/plant1/600/460', name: 'Indoor Plants', description: 'Low-maintenance greenery styled for cozy shelves and corners.', price: '$24' },
+      { image: 'https://picsum.photos/seed/plant2/600/460', name: 'Ceramic Pots', description: 'Hand-finished ceramic vessels with calm, natural tones.', price: '$32' },
+      { image: 'https://picsum.photos/seed/plant3/600/460', name: 'Giftable Plant Arrangements', description: 'Curated greens arranged for birthdays, thank-yous, and milestones.', price: '$58' },
+      { image: 'https://picsum.photos/seed/plant4/600/460', name: 'Desk Plants', description: 'Compact plants that bring a quiet sense of life to workspaces.', price: '$21' },
+      { image: 'https://picsum.photos/seed/plant5/600/460', name: 'Plant Bundles', description: 'Plants paired with cards, ribbon, and keepsake wrapping.', price: '$64' }
+    ];
+    document.getElementById('plantsGrid').innerHTML = plants.map(ProductCard).join('');
+
+    document.getElementById('aboutTitle').innerHTML = SectionTitle('About Bloom Clan', 'Crafted by hand, offered with care.');
+    document.getElementById('aboutAction').innerHTML = CTAButton('Read Our Story', 'about.html');
+
+    document.getElementById('galleryTitle').innerHTML = SectionTitle(
+      'Gallery Preview',
+      'A gentle look at our gifting, cards, botanicals, and presentation details.'
+    );
+    const previewImages = Array.from({ length: 8 }, (_, i) => `https://picsum.photos/seed/homegallery${i + 1}/600/600`);
+    document.getElementById('galleryPreview').innerHTML = GalleryGrid(previewImages);
+    document.getElementById('galleryAction').innerHTML = CTAButton('View Full Gallery', 'gallery.html');
+  </script>
+</body>
+</html>
