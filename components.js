@@ -20,7 +20,7 @@ function Header() {
         </span>
         <span class="brand-text-wrap">
           <span class="brand-name">Bloom Clan</span>
-          <span class="brand-tagline">Handcrafted Botanical Atelier</span>
+          <span class="brand-tagline">stories curated with love</span>
         </span>
       </a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">Menu</button>
