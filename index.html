@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bloom Clan Atelier | Handmade Premium Collections</title>
+  <title>Bloom Clan | Handmade Premium Collections</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,16 +12,21 @@
       <div class="hero-inner">
         <div>
           <h1>Handmade Luxury for Beautiful Everyday Living</h1>
-          <p class="lead">Bloom Clan Atelier creates elegant, artisan-crafted pieces that bring warmth, character, and premium detail into your home and gifting moments.</p>
+          <p class="lead">Bloom Clan creates elegant, artisan-crafted pieces that bring warmth, character, and premium detail into your home and gifting moments.</p>
           <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem;" id="heroActions"></div>
         </div>
-        <img src="https://picsum.photos/seed/homehero/900/700" alt="Bloom Clan handmade featured collection" />
+        <img src="https://picsum.photos/seed/editorial-lifestyle-studio/900/700" alt="Soft handmade editorial lifestyle with keepsakes and plants" />
       </div>
     </section>
 
     <section>
       <div id="featuredTitle"></div>
       <div class="card-grid" id="featuredGrid"></div>
+    </section>
+
+    <section>
+      <div id="plantsTitle"></div>
+      <div class="card-grid" id="plantsGrid"></div>
     </section>
 
     <section>
@@ -51,11 +56,23 @@
     );
 
     const featured = [
-      { image: 'https://picsum.photos/seed/featured1/600/460', name: 'Signature Home Set', description: 'Refined decor accents designed for warm, elegant interiors.', price: '$88' },
-      { image: 'https://picsum.photos/seed/featured2/600/460', name: 'Artisan Candle Duo', description: 'Hand-poured soy candles crafted in small luxury batches.', price: '$39' },
-      { image: 'https://picsum.photos/seed/featured3/600/460', name: 'Celebration Gift Box', description: 'Premium gifting essentials wrapped with timeless handmade charm.', price: '$72' }
+      { image: 'https://picsum.photos/seed/handmade-giftbox/600/460', name: 'Signature Home Set', description: 'Refined decor accents designed for warm, elegant interiors.', price: '$88' },
+      { image: 'https://picsum.photos/seed/soft-candles-editorial/600/460', name: 'Artisan Candle Duo', description: 'Hand-poured soy candles crafted in small premium batches.', price: '$39' },
+      { image: 'https://picsum.photos/seed/keepsake-paper-gift/600/460', name: 'Celebration Gift Box', description: 'Premium gifting essentials wrapped with timeless handmade charm.', price: '$72' }
     ];
     document.getElementById('featuredGrid').innerHTML = featured.map(ProductCard).join('');
+
+    document.getElementById('plantsTitle').innerHTML = SectionTitle(
+      'Plants & Green Gifts',
+      'Gift-ready greenery and handcrafted plant pieces for calm, joyful spaces.'
+    );
+
+    const plants = [
+      { image: 'https://picsum.photos/seed/small-indoor-plants/600/460', name: 'Small Indoor Plants', description: 'Easy-care greens styled for shelves, entries, and gifting moments.', price: '$24+' },
+      { image: 'https://picsum.photos/seed/ceramic-plant-pots/600/460', name: 'Ceramic Plant Pots', description: 'Hand-finished ceramic pots in warm neutral tones for modern homes.', price: '$29+' },
+      { image: 'https://picsum.photos/seed/plant-gift-bundles/600/460', name: 'Plant Gift Bundles', description: 'Thoughtful combinations of plants, cards, and keepsake wrapping.', price: '$58+' }
+    ];
+    document.getElementById('plantsGrid').innerHTML = plants.map(ProductCard).join('');
 
     document.getElementById('aboutTitle').innerHTML = SectionTitle(
       'About Bloom Clan',
@@ -67,7 +84,7 @@
       'Gallery Preview',
       'A glimpse of the textures, tones, and details we love.'
     );
-    const previewImages = Array.from({ length: 8 }, (_, i) => `https://picsum.photos/seed/homegallery${i + 1}/600/600`);
+    const previewImages = Array.from({ length: 8 }, (_, i) => `https://picsum.photos/seed/handmadeeditorial${i + 1}/600/600`);
     document.getElementById('galleryPreview').innerHTML = GalleryGrid(previewImages);
     document.getElementById('galleryAction').innerHTML = CTAButton('View Full Gallery', 'gallery.html');
   </script>

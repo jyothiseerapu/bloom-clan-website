@@ -1,4 +1,5 @@
 const navItems = [
+  { href: 'index.html', label: 'Home' },
   { href: 'about.html', label: 'About' },
   { href: 'products.html', label: 'Products' },
   { href: 'gallery.html', label: 'Gallery' },
@@ -6,13 +7,13 @@ const navItems = [
   { href: 'contact.html', label: 'Contact' },
 ];
 
-const currentPage = location.pathname.split('/').pop();
+const currentPage = location.pathname.split('/').pop() || 'index.html';
 
 function Header() {
   return `
   <header class="site-header">
     <div class="container">
-      <a href="about.html" class="brand">Bloom Clan Atelier</a>
+      <a href="index.html" class="brand">Bloom Clan</a>
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">Menu</button>
       <nav class="nav-links" id="navLinks">
         ${navItems.map((n) => `<a href="${n.href}" class="${currentPage === n.href ? 'active' : ''}">${n.label}</a>`).join('')}
@@ -22,7 +23,7 @@ function Header() {
 }
 
 function Footer() {
-  return `<footer class="site-footer"><div class="container"><div><strong>Bloom Clan Atelier</strong><div class="small">Handmade details. Elevated living.</div></div><div class="small">© ${new Date().getFullYear()} Bloom Clan Atelier</div></div></footer>`;
+  return `<footer class="site-footer"><div class="container"><div><strong>Bloom Clan</strong><div class="small">Handmade details. Elevated living.</div></div><div class="small">© ${new Date().getFullYear()} Bloom Clan</div></div></footer>`;
 }
 
 function SectionTitle(title, subtitle) {
@@ -43,7 +44,7 @@ function GalleryGrid(images) {
 
 function ContactForm(type = 'contact') {
   const extra = type === 'custom' ? `
-      <label>Order Type<select><option>Gift Set</option><option>Wedding Favors</option><option>Home Decor</option></select></label>
+      <label>Order Type<select><option>Gift Set</option><option>Wedding Favors</option><option>Home Decor</option><option>Plant Gift Bundle</option></select></label>
       <label>Desired Delivery Date<input type="date"></label>` : '';
   return `<div class="form-card"><form>${extra}
       <label>Name<input type="text" required></label>
