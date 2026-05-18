@@ -15,7 +15,7 @@
           <p class="lead">Bloom Clan gathers nostalgic toys, tiny green things, painted cards, and story-filled keepsakes for homes that hold memory and heart.</p>
           <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:1rem;" id="heroActions"></div>
         </div>
-        <img src="https://picsum.photos/seed/editorial-lifestyle-studio/900/700" alt="Soft handmade editorial lifestyle with keepsakes and plants" />
+        <img src="assets/images/hero-story-card.png" alt="Bloom Clan hero story card with handmade nostalgic keepsakes" />
       </div>
     </section>
 
@@ -52,13 +52,13 @@
 
     document.getElementById('featuredTitle').innerHTML = SectionTitle(
       'Found With Love',
-      'An editorial curation of tiny treasures, nostalgic finds, and heartfelt keepsakes.'
+      'A warm curation of handmade cards, tiny keepsakes, and shelf stories found with love.'
     );
 
     const featured = [
-      { image: 'https://picsum.photos/seed/handmade-giftbox/600/460', name: 'Signature Home Set', description: 'Refined decor accents designed for warm, elegant interiors.', price: '$88' },
-      { image: 'https://picsum.photos/seed/soft-candles-editorial/600/460', name: 'Artisan Candle Duo', description: 'Hand-poured soy candles crafted in small premium batches.', price: '$39' },
-      { image: 'https://picsum.photos/seed/keepsake-paper-gift/600/460', name: 'Celebration Gift Box', description: 'Premium gifting essentials wrapped with timeless handmade charm.', price: '$72' }
+      { image: 'assets/images/handmade-cards.png', name: 'Handmade Card Stories', description: 'Painted and hand-finished cards made for little moments that matter.', price: '$28+' },
+      { image: 'assets/images/christmas-stories.png', name: 'Christmas Story Keepsakes', description: 'Seasonal keepsakes that feel nostalgic, cozy, and joyfully handmade.', price: '$32+' },
+      { image: 'assets/images/gift-wrapping.png', name: 'Wrapped With Care', description: 'Simple gift wrapping details that make every present feel personal.', price: '$18+' }
     ];
     document.getElementById('featuredGrid').innerHTML = featured.map(ProductCard).join('');
 
@@ -68,9 +68,9 @@
     );
 
     const plants = [
-      { image: 'https://picsum.photos/seed/small-indoor-plants/600/460', name: 'Small Indoor Plants', description: 'Easy-care greens styled for shelves, entries, and gifting moments.', price: '$24+' },
-      { image: 'https://picsum.photos/seed/ceramic-plant-pots/600/460', name: 'Ceramic Plant Pots', description: 'Hand-finished ceramic pots in warm neutral tones for modern homes.', price: '$29+' },
-      { image: 'https://picsum.photos/seed/plant-gift-bundles/600/460', name: 'Plant Gift Bundles', description: 'Thoughtful combinations of plants, cards, and keepsake wrapping.', price: '$58+' }
+      { image: 'assets/images/plant corner.png', name: 'Plant Corner', description: 'Tiny green corners styled simply for shelves and reading nooks.', price: '$24+' },
+      { image: 'assets/images/mini-story-card.png', name: 'Mini Story Cards', description: 'Pocket-sized notes and mini cards to share warm little memories.', price: '$14+' },
+      { image: 'assets/images/stickers-doodles.png', name: 'Sticker & Doodle Pack', description: 'Cute doodles and stickers for journaling, gifting, and playful shelves.', price: '$12+' }
     ];
     document.getElementById('plantsGrid').innerHTML = plants.map(ProductCard).join('');
 
@@ -84,7 +84,16 @@
       'Gallery Preview',
       'A glimpse of the textures, tones, and details we love.'
     );
-    const previewImages = Array.from({ length: 8 }, (_, i) => `https://picsum.photos/seed/handmadeeditorial${i + 1}/600/600`);
+    const previewImages = [
+      'assets/images/hero-story-card.png',
+      'assets/images/handmade-cards.png',
+      'assets/images/stickers-doodles.png',
+      'assets/images/mini-story-card.png',
+      'assets/images/christmas-stories.png',
+      'assets/images/kondapalli-toys.png',
+      'assets/images/plant corner.png',
+      'assets/images/gift-wrapping.png'
+    ];
     document.getElementById('galleryPreview').innerHTML = GalleryGrid(previewImages);
     document.getElementById('galleryAction').innerHTML = CTAButton('View Full Gallery', 'gallery.html');
   </script>
