@@ -19,22 +19,62 @@
       </div>
     </section>
 
-    <section>
-      <div id="featuredTitle"></div>
-      <div class="card-grid" id="featuredGrid"></div>
+    <section class="emotion-section emotion-section--one">
+      <div class="emotion-heading">
+        <h2>Tiny Things Matter</h2>
+        <p>Small handmade things made to stay around.</p>
+      </div>
+      <div class="emotion-layout emotion-layout--one">
+        <article class="emotion-note">
+          <p>Stickers, mini story cards, greeting cards, doodles, and tiny notes made to feel close to home and easy to keep around.</p>
+        </article>
+        <figure class="emotion-image large"><img src="assets/images/stickers-doodles.png" alt="Sticker and doodle sheets"></figure>
+        <figure class="emotion-image"><img src="assets/images/mini-story-card.png" alt="Mini handmade story card"></figure>
+        <figure class="emotion-image"><img src="assets/images/handmade-cards.png" alt="Handmade greeting cards"></figure>
+      </div>
     </section>
 
-    <section>
-      <div id="plantsTitle"></div>
-      <div class="card-grid" id="plantsGrid"></div>
+    <section class="emotion-section emotion-section--two">
+      <div class="emotion-heading">
+        <h2>Collected Slowly</h2>
+        <p>Tiny objects, stories, and nostalgic things gathered over time.</p>
+      </div>
+      <div class="emotion-layout emotion-layout--two">
+        <figure class="emotion-image"><img src="assets/images/christmas-stories.png" alt="Christmas short story books"></figure>
+        <article class="emotion-note">
+          <p>Short story books, Christmas stories, wrapped gifts, Kondapalli toys, and shelf treasures curated like personal keepsakes.</p>
+        </article>
+        <figure class="emotion-image tall"><img src="assets/images/kondapalli-toys.png" alt="Kondapalli toys and shelf treasures"></figure>
+        <figure class="emotion-image"><img src="assets/images/gift-wrapping.png" alt="Warmly wrapped gifts"></figure>
+      </div>
     </section>
 
-    <section>
-      <div id="aboutTitle"></div>
-      <article class="copy">
-        <p>We are a family-led studio devoted to thoughtful craftsmanship, premium materials, and timeless aesthetics. Every Bloom Clan piece is made with care—from first sketch to final ribbon—so your spaces feel refined yet deeply personal.</p>
-        <div style="margin-top:.8rem" id="aboutAction"></div>
-      </article>
+    <section class="emotion-section emotion-section--three">
+      <div class="emotion-heading">
+        <h2>A Few Things We Keep Around</h2>
+        <p>Quiet little corners filled with warmth.</p>
+      </div>
+      <div class="emotion-layout emotion-layout--three">
+        <figure class="emotion-image large"><img src="assets/images/plant corner.png" alt="Plant corner and cozy shelf styling"></figure>
+        <article class="emotion-note">
+          <p>Plants, cozy corners, shelf styling, and lived-in moments that make a room feel gentle, airy, and truly yours.</p>
+        </article>
+        <figure class="emotion-image"><img src="assets/images/hero-story-card.png" alt="Story card in a cozy corner"></figure>
+      </div>
+    </section>
+
+    <section class="about-editorial">
+      <h2>About Bloom Clan</h2>
+      <div class="about-copy">
+        <p>Most things here started as a feeling before they became a product.</p>
+        <p>A small idea.<br>A strange memory.<br>A doodle at midnight.<br>A gift we wished existed but couldn't find anywhere.</p>
+        <p>So we made it.</p>
+        <p>Bloom Clan grew slowly through three friends, countless conversations, and one artistic mind that kept turning ideas into something real.</p>
+        <p>Through tiny observations, handwritten notes, messy sketches, and moments that felt too small to matter — until they did.</p>
+        <p>Nothing was planned too carefully.</p>
+        <p>That’s probably why it works.</p>
+      </div>
+      <div class="about-action" id="aboutAction"></div>
     </section>
 
     <section>
@@ -50,34 +90,6 @@
       CTAButton('Explore Tiny Treasures', 'products.html') +
       CTAButton('Custom Orders', 'custom-orders.html');
 
-    document.getElementById('featuredTitle').innerHTML = SectionTitle(
-      'Found With Love',
-      'A warm curation of handmade cards, tiny keepsakes, and shelf stories found with love.'
-    );
-
-    const featured = [
-      { image: 'assets/images/handmade-cards.png', name: 'Handmade Card Stories', description: 'Painted and hand-finished cards made for little moments that matter.', price: '$28+' },
-      { image: 'assets/images/christmas-stories.png', name: 'Christmas Story Keepsakes', description: 'Seasonal keepsakes that feel nostalgic, cozy, and joyfully handmade.', price: '$32+' },
-      { image: 'assets/images/gift-wrapping.png', name: 'Wrapped With Care', description: 'Simple gift wrapping details that make every present feel personal.', price: '$18+' }
-    ];
-    document.getElementById('featuredGrid').innerHTML = featured.map(ProductCard).join('');
-
-    document.getElementById('plantsTitle').innerHTML = SectionTitle(
-      'Little Living Things',
-      'Soft greenery and quiet corners for shelves, windows, and warm gifting moments.'
-    );
-
-    const plants = [
-      { image: 'assets/images/plant corner.png', name: 'Plant Corner', description: 'Tiny green corners styled simply for shelves and reading nooks.', price: '$24+' },
-      { image: 'assets/images/mini-story-card.png', name: 'Mini Story Cards', description: 'Pocket-sized notes and mini cards to share warm little memories.', price: '$14+' },
-      { image: 'assets/images/stickers-doodles.png', name: 'Sticker & Doodle Pack', description: 'Cute doodles and stickers for journaling, gifting, and playful shelves.', price: '$12+' }
-    ];
-    document.getElementById('plantsGrid').innerHTML = plants.map(ProductCard).join('');
-
-    document.getElementById('aboutTitle').innerHTML = SectionTitle(
-      'About Bloom Clan',
-      'Crafted by hand, rooted in elegance.'
-    );
     document.getElementById('aboutAction').innerHTML = CTAButton('Read Our Story', 'about.html');
 
     document.getElementById('galleryTitle').innerHTML = SectionTitle(
