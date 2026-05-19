@@ -56,7 +56,7 @@ a { color: inherit; text-decoration: none; }
 }
 
 .brand-logo-wrap {
-  height: 66px;
+  height: 68px;
   width: auto;
   overflow: hidden;
   display: inline-flex;
@@ -89,14 +89,14 @@ a { color: inherit; text-decoration: none; }
 }
 .brand-name {
   font-family: "Cormorant Garamond", "Times New Roman", serif;
-  font-size: clamp(1.22rem, 1.34rem + 0.42vw, 1.75rem);
+  font-size: clamp(1.26rem, 1.38rem + 0.46vw, 1.86rem);
   letter-spacing: 0.11em;
   text-transform: uppercase;
   font-weight: 600;
 }
 .brand-tagline {
   font-family: "Parisienne", "Brush Script MT", cursive;
-  font-size: clamp(0.72rem, 0.75rem + 0.2vw, 0.9rem);
+  font-size: clamp(0.74rem, 0.77rem + 0.22vw, 0.94rem);
   letter-spacing: 0.02em;
   color: color-mix(in oklab, var(--muted-gold) 74%, var(--ink));
   text-transform: none;
@@ -329,14 +329,18 @@ textarea { min-height: 130px; resize: vertical; }
 
 
 @media (min-width: 1024px) {
+  .header-inner { min-height: 88px; padding: 0.92rem 0; }
+  .brand-logo-wrap { height: 80px; }
+  .brand-name { font-size: clamp(1.44rem, 1.36rem + 0.5vw, 1.98rem); }
+  .brand-tagline { font-size: clamp(0.78rem, 0.74rem + 0.18vw, 0.98rem); }
   main { padding-top: 5.6rem; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .header-inner { min-height: 78px; }
-  .brand-logo-wrap { height: 56px; }
-  .brand-name { font-size: clamp(1.05rem, 2.3vw, 1.28rem); }
-  .brand-tagline { font-size: clamp(0.64rem, 1.3vw, 0.78rem); }
+  .header-inner { min-height: 80px; }
+  .brand-logo-wrap { height: 62px; }
+  .brand-name { font-size: clamp(1.12rem, 2.35vw, 1.36rem); }
+  .brand-tagline { font-size: clamp(0.66rem, 1.34vw, 0.82rem); }
   main { padding: 4.5rem 0 3.4rem; }
   .hero-inner { grid-template-columns: 1fr; min-height: auto; gap: 1.8rem; padding: clamp(1.5rem, 4.2vw, 2.4rem); }
   .hero h1 { font-size: clamp(2.25rem, 5vw, 3rem); }
@@ -370,7 +374,7 @@ textarea { min-height: 130px; resize: vertical; }
 @media (max-width: 767px) {
   .header-inner { min-height: 72px; padding: 0.68rem 0; }
   .brand { gap: 0.5rem; }
-  .brand-logo-wrap { height: 48px; }
+  .brand-logo-wrap { height: 50px; }
   .brand-name { font-size: 0.98rem; letter-spacing: 0.05em; }
   .brand-tagline { font-size: 0.6rem; }
   .menu-toggle { display: block; margin-left: auto; }
@@ -420,6 +424,21 @@ textarea { min-height: 130px; resize: vertical; }
   label { font-size: 0.92rem; }
   input, textarea, select { padding: 0.68rem; margin-top: 0.24rem; border-radius: 9px; }
   textarea { min-height: 112px; }
+
+  .page-contact main,
+  .page-custom-orders main { padding-top: 2.95rem; }
+  .page-contact .section-title,
+  .page-custom-orders .section-title { margin: 2.5rem 0 1.2rem; }
+  .page-contact .copy,
+  .page-custom-orders .copy { line-height: 1.68; }
+  .page-contact .form-card,
+  .page-custom-orders .form-card { padding: 0.86rem; }
+  .page-contact form,
+  .page-custom-orders form { gap: 0.62rem; }
+  .page-contact input,
+  .page-contact select,
+  .page-custom-orders input,
+  .page-custom-orders select { min-height: 2.28rem; padding-top: 0.56rem; padding-bottom: 0.56rem; }
 
   .footer-grid { grid-template-columns: 1fr; gap: 1.2rem; }
 }
