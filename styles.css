@@ -327,6 +327,47 @@ textarea { min-height: 130px; resize: vertical; }
   line-height: 1.1;
 }
 
+.page-about main { position: relative; }
+.page-about .about-editorial--full {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background:
+    radial-gradient(135% 95% at 12% 10%, rgba(238, 219, 188, 0.2) 0%, rgba(238, 219, 188, 0) 54%),
+    radial-gradient(120% 86% at 86% 85%, rgba(227, 206, 173, 0.16) 0%, rgba(227, 206, 173, 0) 56%),
+    linear-gradient(150deg, rgba(249, 240, 228, 0.95), rgba(241, 230, 214, 0.93));
+}
+.page-about .about-editorial--full::before,
+.page-about .about-editorial--full::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+.page-about .about-editorial--full::before {
+  background:
+    url("assets/images/about-bg-reference.png") no-repeat -92px -70px / 340px auto,
+    url("assets/images/about-bg-reference.png") no-repeat calc(100% + 82px) calc(100% + 70px) / 330px auto,
+    radial-gradient(circle at 8% 12%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 90% 14%, rgba(94, 71, 45, 0.1) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 82% 87%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px);
+  opacity: 0.1;
+}
+.page-about .about-editorial--full::after {
+  background:
+    linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
+    linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
+    radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.08), transparent 68%),
+    radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.08), transparent 68%);
+  opacity: 0.12;
+}
+.page-about .about-editorial--full > * {
+  position: relative;
+  z-index: 1;
+}
+
 
 @media (min-width: 1024px) {
   .header-inner { min-height: 88px; padding: 0.92rem 0; }
@@ -369,6 +410,15 @@ textarea { min-height: 130px; resize: vertical; }
   .about-editorial { margin-top: 3rem; padding: 1.4rem; }
   .about-editorial--full h1 { font-size: clamp(1.95rem, 4.2vw, 2.4rem); }
   .about-copy p { font-size: 1.05rem; line-height: 1.75; }
+  .page-about .about-editorial--full::before {
+    background:
+      url("assets/images/about-bg-reference.png") no-repeat -122px -86px / 300px auto,
+      url("assets/images/about-bg-reference.png") no-repeat calc(100% + 94px) calc(100% + 74px) / 290px auto,
+      radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px);
+    opacity: 0.08;
+  }
+  .page-about .about-editorial--full::after { opacity: 0.1; }
 }
 
 @media (max-width: 767px) {
@@ -415,6 +465,20 @@ textarea { min-height: 130px; resize: vertical; }
   .about-editorial--full h1 { font-size: clamp(1.7rem, 7.1vw, 2.05rem); margin-bottom: 0.85rem; }
   .about-copy { gap: 0.7rem; }
   .about-copy p { font-size: 0.94rem; line-height: 1.5; }
+  .page-about .about-editorial--full::before {
+    background:
+      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
+      radial-gradient(ellipse at 10% 88%, rgba(158, 132, 101, 0.09), transparent 72%),
+      radial-gradient(ellipse at 90% 88%, rgba(158, 132, 101, 0.09), transparent 72%);
+    opacity: 0.08;
+  }
+  .page-about .about-editorial--full::after {
+    background:
+      linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
+      linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
+    opacity: 0.08;
+  }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
   .gallery-grid img { border-radius: 10px; padding: 0.2rem; }
