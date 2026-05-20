@@ -333,9 +333,9 @@ textarea { min-height: 130px; resize: vertical; }
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(135% 95% at 12% 10%, rgba(238, 219, 188, 0.2) 0%, rgba(238, 219, 188, 0) 54%),
-    radial-gradient(120% 86% at 86% 85%, rgba(227, 206, 173, 0.16) 0%, rgba(227, 206, 173, 0) 56%),
-    linear-gradient(150deg, rgba(249, 240, 228, 0.95), rgba(241, 230, 214, 0.93));
+    radial-gradient(135% 95% at 12% 10%, rgba(242, 224, 194, 0.2) 0%, rgba(242, 224, 194, 0) 54%),
+    radial-gradient(120% 86% at 86% 85%, rgba(233, 213, 181, 0.16) 0%, rgba(233, 213, 181, 0) 56%),
+    linear-gradient(150deg, rgba(252, 245, 234, 0.97), rgba(246, 236, 220, 0.95));
 }
 .page-about .about-editorial--full::before,
 .page-about .about-editorial--full::after {
@@ -347,22 +347,22 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .page-about .about-editorial--full::before {
   background:
-    url("assets/images/about-bg-reference.png") no-repeat -220px -160px / 980px auto,
-    url("assets/images/about-bg-reference.png") no-repeat calc(100% + 280px) calc(100% + 180px) / 940px auto,
+    url("assets/images/about-bg-reference.png") no-repeat -26% -18% / contain,
+    url("assets/images/about-bg-reference.png") no-repeat 128% 112% / contain,
     radial-gradient(circle at 8% 12%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px),
     radial-gradient(circle at 90% 14%, rgba(94, 71, 45, 0.1) 0 1.2px, transparent 2px),
     radial-gradient(circle at 82% 87%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px);
-  opacity: 0.19;
+  opacity: 0.22;
 }
 .page-about .about-editorial--full::after {
   background:
-    linear-gradient(0deg, rgba(251, 246, 237, 0.5), rgba(251, 246, 237, 0.5)),
+    radial-gradient(56% 86% at 50% 50%, rgba(252, 248, 241, 0.52), rgba(252, 248, 241, 0.18) 75%, rgba(252, 248, 241, 0.06)),
     linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
     linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
     radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.08), transparent 68%),
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.08), transparent 68%);
-  opacity: 0.16;
+  opacity: 0.2;
 }
 .page-about .about-editorial--full > * {
   position: relative;
@@ -413,13 +413,13 @@ textarea { min-height: 130px; resize: vertical; }
   .about-copy p { font-size: 1.05rem; line-height: 1.75; }
   .page-about .about-editorial--full::before {
     background:
-      url("assets/images/about-bg-reference.png") no-repeat -230px -180px / 840px auto,
-      url("assets/images/about-bg-reference.png") no-repeat calc(100% + 230px) calc(100% + 170px) / 800px auto,
+      url("assets/images/about-bg-reference.png") no-repeat -34% -20% / 92% auto,
+      url("assets/images/about-bg-reference.png") no-repeat 136% 118% / 88% auto,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px);
-    opacity: 0.15;
+    opacity: 0.18;
   }
-  .page-about .about-editorial--full::after { opacity: 0.14; }
+  .page-about .about-editorial--full::after { opacity: 0.17; }
 }
 
 @media (max-width: 767px) {
@@ -468,16 +468,17 @@ textarea { min-height: 130px; resize: vertical; }
   .about-copy p { font-size: 0.94rem; line-height: 1.5; }
   .page-about .about-editorial--full::before {
     background:
-      url("assets/images/about-bg-reference.png") no-repeat -220px -180px / 640px auto,
-      url("assets/images/about-bg-reference.png") no-repeat calc(100% + 220px) calc(100% + 200px) / 600px auto,
-      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px);
-    opacity: 0.1;
+      radial-gradient(90% 72% at -8% -4%, rgba(160, 129, 94, 0.12) 0%, rgba(160, 129, 94, 0) 56%),
+      radial-gradient(90% 72% at 108% 104%, rgba(160, 129, 94, 0.12) 0%, rgba(160, 129, 94, 0) 56%),
+      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.08) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.08) 0 1px, transparent 1.8px);
+    opacity: 0.07;
   }
   .page-about .about-editorial--full::after {
     background:
-      linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
-      linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
+      radial-gradient(64% 76% at 50% 50%, rgba(252, 248, 241, 0.5), rgba(252, 248, 241, 0.16) 74%, rgba(252, 248, 241, 0)),
+      linear-gradient(14deg, rgba(148, 117, 88, 0.06) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
+      linear-gradient(-14deg, rgba(148, 117, 88, 0.06) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
     opacity: 0.08;
   }
 
