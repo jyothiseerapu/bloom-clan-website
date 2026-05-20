@@ -347,22 +347,21 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .page-about .about-editorial--full::before {
   background:
-    url("assets/images/about-bg-reference.png") no-repeat -26% -18% / contain,
-    url("assets/images/about-bg-reference.png") no-repeat 128% 112% / contain,
-    radial-gradient(circle at 8% 12%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.8px),
-    radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 90% 14%, rgba(94, 71, 45, 0.1) 0 1.2px, transparent 2px),
-    radial-gradient(circle at 82% 87%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px);
-  opacity: 0.22;
+    url("assets/images/about-bg-reference.png") center top / contain no-repeat,
+    radial-gradient(circle at 8% 12%, rgba(94, 71, 45, 0.08) 0 1px, transparent 1.8px),
+    radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.06) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 90% 14%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px),
+    radial-gradient(circle at 82% 87%, rgba(94, 71, 45, 0.06) 0 1.2px, transparent 2px);
+  opacity: 0.21;
 }
 .page-about .about-editorial--full::after {
   background:
-    radial-gradient(56% 86% at 50% 50%, rgba(252, 248, 241, 0.52), rgba(252, 248, 241, 0.18) 75%, rgba(252, 248, 241, 0.06)),
-    linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
-    linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
-    radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.08), transparent 68%),
-    radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.08), transparent 68%);
-  opacity: 0.2;
+    radial-gradient(58% 88% at 50% 48%, rgba(252, 248, 241, 0.54), rgba(252, 248, 241, 0.22) 70%, rgba(252, 248, 241, 0.08)),
+    linear-gradient(14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
+    linear-gradient(-14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
+    radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.07), transparent 68%),
+    radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
+  opacity: 0.22;
 }
 .page-about .about-editorial--full > * {
   position: relative;
@@ -413,13 +412,12 @@ textarea { min-height: 130px; resize: vertical; }
   .about-copy p { font-size: 1.05rem; line-height: 1.75; }
   .page-about .about-editorial--full::before {
     background:
-      url("assets/images/about-bg-reference.png") no-repeat -34% -20% / 92% auto,
-      url("assets/images/about-bg-reference.png") no-repeat 136% 118% / 88% auto,
-      radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px);
-    opacity: 0.18;
+      url("assets/images/about-bg-reference.png") center top / contain no-repeat,
+      radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
+    opacity: 0.16;
   }
-  .page-about .about-editorial--full::after { opacity: 0.17; }
+  .page-about .about-editorial--full::after { opacity: 0.2; }
 }
 
 @media (max-width: 767px) {
@@ -468,18 +466,19 @@ textarea { min-height: 130px; resize: vertical; }
   .about-copy p { font-size: 0.94rem; line-height: 1.5; }
   .page-about .about-editorial--full::before {
     background:
-      radial-gradient(90% 72% at -8% -4%, rgba(160, 129, 94, 0.12) 0%, rgba(160, 129, 94, 0) 56%),
-      radial-gradient(90% 72% at 108% 104%, rgba(160, 129, 94, 0.12) 0%, rgba(160, 129, 94, 0) 56%),
-      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.08) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.08) 0 1px, transparent 1.8px);
-    opacity: 0.07;
+      url("assets/images/about-bg-reference.png") right top / 165% auto no-repeat,
+      radial-gradient(90% 72% at -8% -4%, rgba(160, 129, 94, 0.09) 0%, rgba(160, 129, 94, 0) 56%),
+      radial-gradient(90% 72% at 108% 104%, rgba(160, 129, 94, 0.09) 0%, rgba(160, 129, 94, 0) 56%),
+      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px);
+    opacity: 0.12;
   }
   .page-about .about-editorial--full::after {
     background:
-      radial-gradient(64% 76% at 50% 50%, rgba(252, 248, 241, 0.5), rgba(252, 248, 241, 0.16) 74%, rgba(252, 248, 241, 0)),
-      linear-gradient(14deg, rgba(148, 117, 88, 0.06) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
-      linear-gradient(-14deg, rgba(148, 117, 88, 0.06) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
-    opacity: 0.08;
+      radial-gradient(70% 82% at 50% 46%, rgba(252, 248, 241, 0.58), rgba(252, 248, 241, 0.25) 72%, rgba(252, 248, 241, 0.08)),
+      linear-gradient(14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
+      linear-gradient(-14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
+    opacity: 0.12;
   }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
