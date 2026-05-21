@@ -415,9 +415,9 @@ textarea { min-height: 130px; resize: vertical; }
       url("assets/images/about-bg-reference.png") center top / contain no-repeat,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
-    opacity: 0.16;
+    opacity: 0.17;
   }
-  .page-about .about-editorial--full::after { opacity: 0.2; }
+  .page-about .about-editorial--full::after { opacity: 0.17; }
 }
 
 @media (max-width: 767px) {
@@ -471,14 +471,14 @@ textarea { min-height: 130px; resize: vertical; }
       radial-gradient(90% 72% at 108% 104%, rgba(160, 129, 94, 0.09) 0%, rgba(160, 129, 94, 0) 56%),
       radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px),
       radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px);
-    opacity: 0.12;
+    opacity: 0.14;
   }
   .page-about .about-editorial--full::after {
     background:
       radial-gradient(70% 82% at 50% 46%, rgba(252, 248, 241, 0.58), rgba(252, 248, 241, 0.25) 72%, rgba(252, 248, 241, 0.08)),
       linear-gradient(14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
       linear-gradient(-14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
-    opacity: 0.12;
+    opacity: 0.1;
   }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
