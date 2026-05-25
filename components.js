@@ -49,14 +49,13 @@ function Footer() {
           </a>
           <p class="footer-philosophy">curated slowly, kept closely</p>
         </section>
-        <nav class="footer-block footer-nav" aria-label="Footer navigation">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="products.html">Products</a>
-          <a href="gallery.html">Gallery</a>
+        <div class="footer-block footer-editorial" aria-label="Footer highlights">
+          <a href="about.html">About Bloom Clan</a>
           <a href="custom-orders.html">Custom Orders</a>
+          <a href="products.html">Tiny Acts Count</a>
+          <a href="gallery.html">Bloom Clan Stories</a>
           <a href="contact.html">Contact</a>
-        </nav>
+        </div>
         <section class="footer-block footer-social">
           <p class="footer-label">Instagram</p>
           <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer">@bloomclan_stories</a></p>
