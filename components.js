@@ -32,7 +32,40 @@ function Header() {
 }
 
 function Footer() {
-  return `<footer class="site-footer"><div class="container footer-grid"><section><h3>About Bloom Clan</h3><p class="small">Tiny treasures, nostalgic stories, and handcrafted moments curated with love.</p><p class="small">A quiet creative studio where keepsakes, plants, toys, and paper stories are gathered with heart.</p></section><section><h3>Stories & Curations</h3><ul><li><a href="products.html">Tiny Treasures</a></li><li><a href="products.html">Shelf Stories</a></li><li><a href="products.html">Seasonal Stories</a></li><li><a href="gallery.html">Curated Corners</a></li></ul></section><section><h3>Custom Orders</h3><p class="small">For bespoke gifting stories, message us through our custom order form or Instagram direct message.</p><p class="small"><a href="custom-orders.html">Start a custom order</a></p></section><section><h3>Instagram / Community</h3><p class="small"><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer">@bloomclan_stories</a></p><p class="small">JAS Nest Australia</p></section></div></footer>`;
+  return `<footer class="site-footer">
+    <div class="footer-paper-grain" aria-hidden="true"></div>
+    <div class="footer-decor" aria-hidden="true">
+      <span class="decor-star">✦</span>
+      <span class="decor-line decor-line--left"></span>
+      <span class="decor-mushroom">❀</span>
+      <span class="decor-tape"></span>
+      <span class="decor-line decor-line--right"></span>
+    </div>
+    <div class="container footer-shell">
+      <div class="footer-grid">
+        <section class="footer-block footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="Bloom Clan home">
+            <img src="assets/logo/BloomClan Logo.png" alt="Bloom Clan logo" class="footer-logo" width="110" height="110" />
+          </a>
+          <p class="footer-philosophy">curated slowly, kept closely</p>
+        </section>
+        <nav class="footer-block footer-nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="custom-orders.html">Custom Orders</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <section class="footer-block footer-social">
+          <p class="footer-label">Instagram</p>
+          <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer">@bloomclan_stories</a></p>
+          <p class="footer-note">stories gathered, memories shared</p>
+        </section>
+      </div>
+      <p class="footer-copyright">JAS Nest Australia</p>
+    </div>
+  </footer>`;
 }
 
 function SectionTitle(title, subtitle) {
