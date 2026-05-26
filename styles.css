@@ -215,12 +215,12 @@ textarea { min-height: 130px; resize: vertical; }
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(168deg, #d8c2aa 0%, #ccb498 50%, #c1a98d 100%),
-    radial-gradient(120% 90% at 8% 0%, rgba(247, 236, 221, 0.23), transparent 55%),
-    repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.035) 0 2px, rgba(92, 67, 47, 0.02) 2px 4px);
-  color: #f1e2cf;
+    linear-gradient(180deg, #dcc6af 0%, #ccb59d 56%, #b9a48f 100%),
+    radial-gradient(125% 88% at 10% 0%, rgba(248, 236, 220, 0.22), transparent 58%),
+    repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.03) 0 2px, rgba(92, 67, 47, 0.018) 2px 4px);
+  color: #f4e8d8;
   padding: 4rem 0 1.9rem;
-  border-top: 1px solid rgba(106, 74, 50, 0.25);
+  border-top: 1px solid rgba(104, 73, 50, 0.26);
 }
 .footer-paper-grain {
   position: absolute;
@@ -238,24 +238,24 @@ textarea { min-height: 130px; resize: vertical; }
   gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
 }
-.footer-block { position: relative; }
+.footer-block { position: relative; margin: 0; align-self: start; }
 .footer-heading {
   margin: 0 0 0.7rem;
-  color: #4f3525;
+  color: #563927;
   font-size: clamp(1.05rem, 1.35vw, 1.2rem);
   letter-spacing: 0.03em;
 }
 .footer-heading--sub { margin-top: 0; }
 .footer-body {
   margin: 0;
-  color: rgba(249, 235, 216, 0.94);
+  color: rgba(246, 234, 216, 0.97);
   line-height: 1.75;
   max-width: 34ch;
 }
 .footer-script {
   margin: 0.65rem 0 0;
   font-family: "Parisienne", "Brush Script MT", cursive;
-  color: rgba(248, 224, 194, 0.72);
+  color: rgba(252, 234, 212, 0.88);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   letter-spacing: 0.015em;
 }
@@ -266,7 +266,7 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .footer-editorial a {
   font-size: 1.03rem;
-  color: rgba(248, 232, 210, 0.92);
+  color: rgba(250, 236, 216, 0.96);
   letter-spacing: 0.02em;
   padding-left: 0.08rem;
   transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
@@ -280,7 +280,7 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-inline-link {
   display: inline-flex;
   margin-top: 0.5rem;
-  color: #fff2e2;
+  color: #fdf0df;
   border-bottom: 1px solid rgba(255, 236, 211, 0.35);
   transition: border-color .2s ease, color .2s ease;
 }
@@ -293,28 +293,28 @@ textarea { min-height: 130px; resize: vertical; }
   width: min(220px, 70%);
   height: 1px;
   margin: 1rem 0;
-  background: linear-gradient(90deg, rgba(255, 238, 215, 0), rgba(255, 238, 215, 0.5), rgba(255, 238, 215, 0));
+  background: linear-gradient(90deg, rgba(255, 238, 215, 0), rgba(255, 238, 215, 0.56), rgba(255, 238, 215, 0));
 }
 .footer-copyright {
   margin: 2.7rem 0 0;
   text-align: center;
   font-size: 0.78rem;
   letter-spacing: 0.09em;
-  color: rgba(248, 228, 204, 0.64);
+  color: rgba(246, 230, 211, 0.76);
 }
 .footer-decor {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  color: rgba(252, 233, 210, 0.3);
+  color: rgba(252, 233, 210, 0.2);
   font-size: 0.78rem;
 }
 .decor-star { position: absolute; top: 1.2rem; left: 16%; }
-.decor-mushroom { position: absolute; right: 12%; top: 1.8rem; font-size: 0.72rem; opacity: 0.55; }
+.decor-mushroom { position: absolute; right: 12%; top: 1.8rem; font-size: 0.72rem; opacity: 0.36; }
 .decor-line {
   position: absolute;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(249, 228, 201, 0.35), transparent);
+  background: linear-gradient(90deg, transparent, rgba(249, 228, 201, 0.24), transparent);
 }
 .decor-line--left { top: 2.15rem; left: 5%; width: 88px; }
 .decor-line--right { top: 2.6rem; right: 5%; width: 72px; }
@@ -324,8 +324,8 @@ textarea { min-height: 130px; resize: vertical; }
   left: calc(50% - 22px);
   width: 44px;
   height: 12px;
-  background: linear-gradient(150deg, rgba(245, 227, 205, 0.32), rgba(235, 205, 174, 0.32));
-  border: 1px solid rgba(191, 158, 127, 0.32);
+  background: linear-gradient(150deg, rgba(245, 227, 205, 0.22), rgba(235, 205, 174, 0.22));
+  border: 1px solid rgba(191, 158, 127, 0.2);
   border-radius: 2px;
   transform: rotate(-5deg);
   opacity: 0.55;
@@ -456,16 +456,16 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.06) 0 1.2px, transparent 2px),
     radial-gradient(circle at 90% 14%, rgba(94, 71, 45, 0.08) 0 1.2px, transparent 2px),
     radial-gradient(circle at 82% 87%, rgba(94, 71, 45, 0.06) 0 1.2px, transparent 2px);
-  opacity: 0.21;
+  opacity: 0.32;
 }
 .page-about .about-editorial--full::after {
   background:
-    radial-gradient(58% 88% at 50% 48%, rgba(252, 248, 241, 0.54), rgba(252, 248, 241, 0.22) 70%, rgba(252, 248, 241, 0.08)),
+    radial-gradient(58% 88% at 50% 48%, rgba(252, 248, 241, 0.48), rgba(252, 248, 241, 0.2) 70%, rgba(252, 248, 241, 0.07)),
     linear-gradient(14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
     linear-gradient(-14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
     radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.07), transparent 68%),
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
-  opacity: 0.22;
+  opacity: 0.18;
 }
 .page-about .about-editorial--full > * {
   position: relative;
@@ -495,10 +495,11 @@ textarea { min-height: 130px; resize: vertical; }
   .card-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.3rem; }
   .product-card .content { padding: 1.2rem; }
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; }
-  .footer-grid { grid-template-columns: 1fr 1fr; gap: 1.65rem; }
-  .footer-about { grid-column: span 2; }
-  .footer-body { max-width: none; }
-  .footer-community { grid-column: span 2; }
+  .footer-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(1.3rem, 2.8vw, 2.15rem); }
+  .footer-about,
+  .footer-stories,
+  .footer-community { grid-column: auto; }
+  .footer-body { max-width: 36ch; }
   .footer-editorial { gap: 0.5rem; }
   .decor-line--left,
   .decor-line--right { width: 48px; }
@@ -525,9 +526,9 @@ textarea { min-height: 130px; resize: vertical; }
       url("assets/images/about-bg-reference.png") center top / contain no-repeat,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
-    opacity: 0.17;
+    opacity: 0.26;
   }
-  .page-about .about-editorial--full::after { opacity: 0.17; }
+  .page-about .about-editorial--full::after { opacity: 0.15; }
 }
 
 @media (max-width: 767px) {
@@ -581,14 +582,14 @@ textarea { min-height: 130px; resize: vertical; }
       radial-gradient(90% 72% at 108% 104%, rgba(160, 129, 94, 0.09) 0%, rgba(160, 129, 94, 0) 56%),
       radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px),
       radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.06) 0 1px, transparent 1.8px);
-    opacity: 0.14;
+    opacity: 0.15;
   }
   .page-about .about-editorial--full::after {
     background:
       radial-gradient(70% 82% at 50% 46%, rgba(252, 248, 241, 0.58), rgba(252, 248, 241, 0.25) 72%, rgba(252, 248, 241, 0.08)),
       linear-gradient(14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 9% 14% / 52px 14px no-repeat,
       linear-gradient(-14deg, rgba(148, 117, 88, 0.05) 10%, transparent 10.5%) 84% 88% / 52px 14px no-repeat;
-    opacity: 0.1;
+    opacity: 0.13;
   }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
