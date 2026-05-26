@@ -43,23 +43,28 @@ function Footer() {
     </div>
     <div class="container footer-shell">
       <div class="footer-grid">
-        <section class="footer-block footer-brand">
-          <a href="index.html" class="footer-logo-link" aria-label="Bloom Clan home">
-            <img src="assets/logo/BloomClan Logo.png" alt="Bloom Clan logo" class="footer-logo" width="110" height="110" />
-          </a>
-          <p class="footer-philosophy">curated slowly, kept closely</p>
+        <section class="footer-block footer-about">
+          <h3 class="footer-heading">About Bloom Clan</h3>
+          <p class="footer-body">Tiny treasures, nostalgic stories, and handcrafted moments curated with love.</p>
+          <p class="footer-script">curated slowly, kept closely</p>
         </section>
-        <div class="footer-block footer-editorial" aria-label="Footer highlights">
-          <a href="about.html">About Bloom Clan</a>
-          <a href="custom-orders.html">Custom Orders</a>
-          <a href="products.html">Tiny Acts Count</a>
-          <a href="gallery.html">Bloom Clan Stories</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <section class="footer-block footer-social">
-          <p class="footer-label">Instagram</p>
-          <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer">@bloomclan_stories</a></p>
-          <p class="footer-note">stories gathered, memories shared</p>
+        <section class="footer-block footer-stories" aria-label="Stories and curations">
+          <h3 class="footer-heading">Stories &amp; Curations</h3>
+          <div class="footer-editorial">
+            <a href="products.html">Tiny Treasures</a>
+            <a href="gallery.html">Shelf Stories</a>
+            <a href="index.html#seasonal-stories">Seasonal Stories</a>
+            <a href="about.html">Bloom Clan Stories</a>
+          </div>
+        </section>
+        <section class="footer-block footer-community">
+          <h3 class="footer-heading">Custom Orders</h3>
+          <p class="footer-body">For bespoke gifting stories, message us through our custom order form or Instagram direct message.</p>
+          <p><a href="custom-orders.html" class="footer-inline-link">Start a custom order</a></p>
+          <div class="footer-divider" aria-hidden="true"></div>
+          <h3 class="footer-heading footer-heading--sub">Instagram / Community</h3>
+          <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer" class="footer-inline-link">@bloomclan_stories</a></p>
+          <p class="footer-script">stories gathered, memories shared</p>
         </section>
       </div>
       <p class="footer-copyright">JAS Nest Australia</p>
