@@ -57,13 +57,15 @@ function Footer() {
             <a href="about.html">Bloom Clan Stories</a>
           </div>
         </section>
-        <section class="footer-block footer-community">
+        <section class="footer-block footer-custom">
           <h3 class="footer-heading">Custom Orders</h3>
           <p class="footer-body">For bespoke gifting stories, message us through our custom order form or Instagram direct message.</p>
-          <p><a href="custom-orders.html" class="footer-inline-link">Start a custom order</a></p>
-          <div class="footer-divider" aria-hidden="true"></div>
-          <h3 class="footer-heading footer-heading--sub">Instagram / Community</h3>
-          <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer" class="footer-inline-link">@bloomclan_stories</a></p>
+          <p><a href="custom-orders.html" class="footer-inline-link footer-inline-link--key">Start a custom order</a></p>
+        </section>
+        <section class="footer-block footer-community">
+          <h3 class="footer-heading">Instagram / Community</h3>
+          <p class="footer-body">Follow our tiny treasures, behind-the-scenes stories, and handcrafted moments.</p>
+          <p><a href="https://instagram.com/bloomclan_stories" target="_blank" rel="noopener noreferrer" class="footer-inline-link footer-inline-link--key">@bloomclan_stories</a></p>
           <p class="footer-script">stories gathered, memories shared</p>
         </section>
       </div>
