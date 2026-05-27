@@ -215,11 +215,11 @@ textarea { min-height: 130px; resize: vertical; }
   position: relative;
   overflow: hidden;
   background:
-    linear-gradient(180deg, #e3cfb8 0%, #d2bda7 52%, #bca894 100%),
-    radial-gradient(120% 85% at 12% 8%, rgba(251, 239, 223, 0.22), transparent 60%),
-    radial-gradient(120% 95% at 88% 94%, rgba(170, 139, 109, 0.13), transparent 64%),
-    repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.024) 0 2px, rgba(92, 67, 47, 0.014) 2px 4px);
-  color: #f7ead9;
+    linear-gradient(180deg, #ead8c2 0%, #dcc4ad 45%, #b99f88 100%),
+    radial-gradient(120% 86% at 14% 6%, rgba(252, 241, 225, 0.24), transparent 58%),
+    radial-gradient(118% 94% at 86% 96%, rgba(162, 129, 99, 0.16), transparent 66%),
+    repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.025) 0 2px, rgba(92, 67, 47, 0.015) 2px 4px);
+  color: #f8eddc;
   padding: 4rem 0 1.9rem;
   border-top: 1px solid rgba(104, 73, 50, 0.26);
 }
@@ -248,7 +248,7 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .footer-body {
   margin: 0;
-  color: rgba(250, 238, 221, 0.98);
+  color: rgba(247, 236, 217, 0.99);
   line-height: 1.75;
   max-width: 34ch;
 }
@@ -266,7 +266,7 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .footer-editorial a {
   font-size: 1.03rem;
-  color: rgba(250, 236, 216, 0.96);
+  color: rgba(249, 236, 217, 0.98);
   letter-spacing: 0.02em;
   padding-left: 0.08rem;
   transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
@@ -280,7 +280,7 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-inline-link {
   display: inline-flex;
   margin-top: 0.5rem;
-  color: #ffefdb;
+  color: #faebd6;
   border-bottom: 1px solid rgba(255, 240, 220, 0.45);
   transition: border-color .2s ease, color .2s ease;
 }
@@ -292,7 +292,7 @@ textarea { min-height: 130px; resize: vertical; }
 
 .footer-inline-link--key {
   font-weight: 600;
-  color: #fff5e5;
+  color: #fff0da;
   text-shadow: 0 1px 10px rgba(74, 45, 28, 0.16);
 }
 .footer-divider {
@@ -306,7 +306,7 @@ textarea { min-height: 130px; resize: vertical; }
   text-align: center;
   font-size: 0.78rem;
   letter-spacing: 0.09em;
-  color: rgba(246, 230, 211, 0.76);
+  color: rgba(244, 228, 208, 0.82);
 }
 .footer-decor {
   position: absolute;
@@ -466,7 +466,7 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px),
     radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
     radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
-  opacity: 0.3;
+  opacity: 0.27;
 }
 .page-about .about-editorial--full::after {
   background:
@@ -534,9 +534,9 @@ textarea { min-height: 130px; resize: vertical; }
       url("assets/images/about-bg-reference.png") center center / contain no-repeat,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
-    opacity: 0.24;
+    opacity: 0.22;
   }
-  .page-about .about-editorial--full::after { opacity: 0.2; }
+  .page-about .about-editorial--full::after { opacity: 0.17; }
 }
 
 @media (max-width: 767px) {
@@ -586,16 +586,35 @@ textarea { min-height: 130px; resize: vertical; }
   .about-copy p { font-size: 0.94rem; line-height: 1.5; }
   .page-about .about-editorial--full::before {
     background:
-      radial-gradient(92% 74% at -10% -6%, rgba(160, 129, 94, 0.08) 0%, rgba(160, 129, 94, 0) 58%),
-      radial-gradient(92% 74% at 110% 106%, rgba(160, 129, 94, 0.08) 0%, rgba(160, 129, 94, 0) 58%),
-      radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.04) 0 1px, transparent 1.8px),
-      radial-gradient(circle at 88% 14%, rgba(94, 71, 45, 0.04) 0 1px, transparent 1.8px);
-    opacity: 0.06;
+      url("assets/images/about-bg-reference.png") center center / contain no-repeat,
+      radial-gradient(78% 62% at 8% 8%, rgba(155, 122, 89, 0.16), rgba(155, 122, 89, 0) 72%),
+      radial-gradient(78% 64% at 93% 12%, rgba(155, 122, 89, 0.15), rgba(155, 122, 89, 0) 74%),
+      radial-gradient(70% 58% at 10% 92%, rgba(155, 122, 89, 0.15), rgba(155, 122, 89, 0) 74%),
+      radial-gradient(74% 58% at 93% 89%, rgba(155, 122, 89, 0.16), rgba(155, 122, 89, 0) 74%),
+      radial-gradient(circle at 12% 10%, rgba(94, 71, 45, 0.12) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 18% 14%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.9px),
+      radial-gradient(circle at 86% 14%, rgba(94, 71, 45, 0.11) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 89% 88%, rgba(94, 71, 45, 0.11) 0 1px, transparent 1.8px),
+      radial-gradient(circle at 9% 84%, rgba(94, 71, 45, 0.1) 0 1px, transparent 1.9px);
+    background-position:
+      center center,
+      left top,
+      right top,
+      left bottom,
+      right bottom,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0;
+    opacity: 0.13;
   }
   .page-about .about-editorial--full::after {
     background:
-      radial-gradient(72% 84% at 50% 48%, rgba(252, 248, 241, 0.42), rgba(252, 248, 241, 0.18) 72%, rgba(252, 248, 241, 0.04));
-    opacity: 0.06;
+      radial-gradient(70% 82% at 50% 50%, rgba(252, 248, 241, 0.5), rgba(252, 248, 241, 0.2) 70%, rgba(252, 248, 241, 0.06)),
+      linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.4%) 5% 9% / 64px 17px no-repeat,
+      linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.4%) 86% 82% / 66px 17px no-repeat;
+    opacity: 0.11;
   }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
@@ -622,14 +641,14 @@ textarea { min-height: 130px; resize: vertical; }
   .page-custom-orders input,
   .page-custom-orders select { min-height: 2.28rem; padding-top: 0.56rem; padding-bottom: 0.56rem; }
 
-  .footer-grid { grid-template-columns: 1fr; gap: 1.2rem; text-align: left; }
+  .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; text-align: left; }
   .footer-heading,
   .footer-body,
   .footer-script,
   .footer-editorial a { text-align: left; }
-  .footer-editorial { justify-items: start; gap: 0.45rem; padding-top: 0; }
+  .footer-editorial { justify-items: start; gap: 0.58rem; padding-top: 0; }
   .footer-divider { width: min(220px, 92%); }
-  .footer-copyright { margin-top: 1.8rem; }
+  .footer-copyright { margin-top: 2.3rem; }
   .decor-tape { top: 0.95rem; width: 30px; left: calc(50% - 15px); }
   .decor-line--left,
   .decor-line--right { display: none; }
