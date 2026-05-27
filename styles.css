@@ -224,7 +224,7 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(120% 86% at 14% 6%, rgba(252, 241, 225, 0.24), transparent 58%),
     radial-gradient(118% 94% at 86% 96%, rgba(162, 129, 99, 0.16), transparent 66%),
     repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.025) 0 2px, rgba(92, 67, 47, 0.015) 2px 4px);
-  color: #f8eddc;
+  color: #5b412f;
   padding: 4rem 0 1.9rem;
   border-top: 1px solid rgba(104, 73, 50, 0.26);
 }
@@ -247,20 +247,20 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-block { position: relative; margin: 0; align-self: start; }
 .footer-heading {
   margin: 0 0 0.7rem;
-  color: #523722;
+  color: #3f2a1d;
   font-size: clamp(1.05rem, 1.35vw, 1.2rem);
   letter-spacing: 0.03em;
 }
 .footer-body {
   margin: 0;
-  color: rgba(246, 233, 211, 0.98);
+  color: #5b412f;
   line-height: 1.75;
   max-width: 34ch;
 }
 .footer-script {
   margin: 0.65rem 0 0;
   font-family: "Parisienne", "Brush Script MT", cursive;
-  color: rgba(252, 238, 214, 0.95);
+  color: #6b4c36;
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   letter-spacing: 0.015em;
 }
@@ -271,34 +271,34 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .footer-editorial a {
   font-size: 1.03rem;
-  color: rgba(251, 238, 216, 0.99);
+  color: #4b3325;
   letter-spacing: 0.02em;
   padding-left: 0.08rem;
   transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
 }
 .footer-editorial a:hover,
 .footer-editorial a:focus-visible {
-  color: #fff4e3;
+  color: #2f1f15;
   transform: translateX(2px);
   text-shadow: 0 4px 14px rgba(74, 45, 28, 0.28);
 }
 .footer-inline-link {
   display: inline-flex;
   margin-top: 0.5rem;
-  color: #f9ebd5;
-  border-bottom: 1px solid rgba(255, 240, 220, 0.45);
+  color: #4b3325;
+  border-bottom: 1px solid rgba(75, 51, 37, 0.35);
   transition: border-color .2s ease, color .2s ease;
 }
 .footer-inline-link:hover,
 .footer-inline-link:focus-visible {
-  color: #ffffff;
-  border-color: rgba(255, 246, 229, 0.75);
+  color: #2f1f15;
+  border-color: rgba(47, 31, 21, 0.55);
 }
 
 .footer-inline-link--key {
   font-weight: 600;
-  color: #fdefd9;
-  text-shadow: 0 1px 10px rgba(74, 45, 28, 0.16);
+  color: #4b3325;
+  text-shadow: none;
 }
 .footer-divider {
   width: min(220px, 70%);
@@ -311,7 +311,7 @@ textarea { min-height: 130px; resize: vertical; }
   text-align: center;
   font-size: 0.78rem;
   letter-spacing: 0.09em;
-  color: rgba(247, 233, 214, 0.9);
+  color: #6f5745;
 }
 .footer-decor {
   position: absolute;
@@ -449,6 +449,7 @@ textarea { min-height: 130px; resize: vertical; }
   overflow: hidden;
   isolation: isolate;
   min-height: 560px;
+  padding-bottom: clamp(2.8rem, 4.5vw, 4rem);
   background:
     linear-gradient(180deg, rgba(252, 246, 236, 0.98) 0%, rgba(245, 234, 216, 0.97) 56%, rgba(236, 220, 198, 0.96) 100%),
     radial-gradient(130% 90% at 10% 14%, rgba(244, 226, 195, 0.14) 0%, rgba(244, 226, 195, 0) 60%),
@@ -475,16 +476,30 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .page-about .about-editorial--full::after {
   background:
-    radial-gradient(60% 90% at 50% 48%, rgba(252, 248, 241, 0.44), rgba(252, 248, 241, 0.18) 72%, rgba(252, 248, 241, 0.06)),
+    radial-gradient(54% 84% at 50% 46%, rgba(255, 248, 236, 0.82), rgba(255, 248, 236, 0.56) 64%, rgba(255, 248, 236, 0.16) 82%, rgba(255, 248, 236, 0)),
     linear-gradient(14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 5% 20% / 68px 18px no-repeat,
     linear-gradient(-14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
     radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.07), transparent 68%),
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
-  opacity: 0.14;
+  opacity: 0.24;
 }
 .page-about .about-editorial--full > * {
   position: relative;
   z-index: 1;
+}
+.page-about .about-editorial--full .about-copy {
+  max-width: 58ch;
+  padding: clamp(1.25rem, 2vw, 1.65rem) clamp(1.1rem, 2.4vw, 1.9rem);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(255, 249, 239, 0.93), rgba(250, 240, 224, 0.9));
+  box-shadow: 0 16px 32px rgba(122, 91, 63, 0.12);
+  border: 1px solid rgba(164, 126, 92, 0.2);
+}
+.page-about .about-editorial--full .about-copy p:last-child {
+  margin-bottom: 0.35rem;
+}
+.page-about .about-editorial--full .about-action {
+  margin-top: 1.8rem;
 }
 
 
@@ -534,6 +549,9 @@ textarea { min-height: 130px; resize: vertical; }
   .page-about .about-editorial--full { min-height: 520px; }
   .about-editorial--full h1 { font-size: clamp(1.95rem, 4.2vw, 2.4rem); }
   .about-copy p { font-size: 1.05rem; line-height: 1.75; }
+  .page-about .about-editorial--full { padding-bottom: 3.3rem; }
+  .page-about .about-editorial--full .about-copy { padding: 1.15rem 1.3rem; }
+  .page-about .about-editorial--full .about-action { margin-top: 1.65rem; }
   .page-about .about-editorial--full::before {
     background:
       url("assets/images/about-bg-reference.png") center center / contain no-repeat,
@@ -589,6 +607,12 @@ textarea { min-height: 130px; resize: vertical; }
   .about-editorial--full h1 { font-size: clamp(1.7rem, 7.1vw, 2.05rem); margin-bottom: 0.85rem; }
   .about-copy { gap: 0.7rem; }
   .about-copy p { font-size: 0.94rem; line-height: 1.5; }
+  .page-about .about-editorial--full { padding-bottom: 3rem; }
+  .page-about .about-editorial--full .about-copy {
+    padding: 1rem 0.9rem;
+    border-radius: 16px;
+  }
+  .page-about .about-editorial--full .about-action { margin-top: 1.5rem; }
   .page-about .about-editorial--full::before {
     background:
       url("assets/images/about-bg-reference.png") center center / contain no-repeat,
