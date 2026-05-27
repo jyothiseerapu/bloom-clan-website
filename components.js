@@ -23,7 +23,7 @@ function Header() {
           <span class="brand-tagline">stories curated with love</span>
         </span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">Menu</button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">☰ Bloom Corner ✨</button>
       <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
         ${navItems.map((n) => `<a href="${n.href}" class="${currentPage === n.href ? 'active' : ''}">${n.label}</a>`).join('')}
       </nav>

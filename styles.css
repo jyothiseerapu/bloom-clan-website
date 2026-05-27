@@ -106,11 +106,16 @@ a { color: inherit; text-decoration: none; }
 
 .menu-toggle {
   display: none;
-  border: 1px solid var(--border);
-  background: color-mix(in oklab, var(--surface) 90%, var(--warm-ivory));
-  color: var(--ink);
-  padding: 0.55rem 0.9rem;
-  border-radius: 10px;
+  border: 1px solid color-mix(in oklab, var(--border) 85%, #f7e8d3);
+  background: linear-gradient(160deg, #f7ebdb, #f1e2cd);
+  color: color-mix(in oklab, var(--ink) 86%, #6a4f38);
+  padding: 0.52rem 0.88rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  white-space: nowrap;
+  box-shadow: 0 7px 16px rgba(99, 74, 50, 0.12);
 }
 .nav-links { display: flex; gap: 0.35rem; align-items: center; }
 .nav-links a {
@@ -242,20 +247,20 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-block { position: relative; margin: 0; align-self: start; }
 .footer-heading {
   margin: 0 0 0.7rem;
-  color: #4f3424;
+  color: #523722;
   font-size: clamp(1.05rem, 1.35vw, 1.2rem);
   letter-spacing: 0.03em;
 }
 .footer-body {
   margin: 0;
-  color: rgba(247, 236, 217, 0.99);
+  color: rgba(246, 233, 211, 0.98);
   line-height: 1.75;
   max-width: 34ch;
 }
 .footer-script {
   margin: 0.65rem 0 0;
   font-family: "Parisienne", "Brush Script MT", cursive;
-  color: rgba(255, 239, 217, 0.92);
+  color: rgba(252, 238, 214, 0.95);
   font-size: clamp(1rem, 1.3vw, 1.15rem);
   letter-spacing: 0.015em;
 }
@@ -266,7 +271,7 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .footer-editorial a {
   font-size: 1.03rem;
-  color: rgba(249, 236, 217, 0.98);
+  color: rgba(251, 238, 216, 0.99);
   letter-spacing: 0.02em;
   padding-left: 0.08rem;
   transition: color .22s ease, transform .22s ease, text-shadow .22s ease;
@@ -280,7 +285,7 @@ textarea { min-height: 130px; resize: vertical; }
 .footer-inline-link {
   display: inline-flex;
   margin-top: 0.5rem;
-  color: #faebd6;
+  color: #f9ebd5;
   border-bottom: 1px solid rgba(255, 240, 220, 0.45);
   transition: border-color .2s ease, color .2s ease;
 }
@@ -292,7 +297,7 @@ textarea { min-height: 130px; resize: vertical; }
 
 .footer-inline-link--key {
   font-weight: 600;
-  color: #fff0da;
+  color: #fdefd9;
   text-shadow: 0 1px 10px rgba(74, 45, 28, 0.16);
 }
 .footer-divider {
@@ -306,7 +311,7 @@ textarea { min-height: 130px; resize: vertical; }
   text-align: center;
   font-size: 0.78rem;
   letter-spacing: 0.09em;
-  color: rgba(244, 228, 208, 0.82);
+  color: rgba(247, 233, 214, 0.9);
 }
 .footer-decor {
   position: absolute;
@@ -534,9 +539,9 @@ textarea { min-height: 130px; resize: vertical; }
       url("assets/images/about-bg-reference.png") center center / contain no-repeat,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
-    opacity: 0.22;
+    opacity: 0.32;
   }
-  .page-about .about-editorial--full::after { opacity: 0.17; }
+  .page-about .about-editorial--full::after { opacity: 0.11; }
 }
 
 @media (max-width: 767px) {
@@ -607,14 +612,14 @@ textarea { min-height: 130px; resize: vertical; }
       0 0,
       0 0,
       0 0;
-    opacity: 0.13;
+    opacity: 0.29;
   }
   .page-about .about-editorial--full::after {
     background:
       radial-gradient(70% 82% at 50% 50%, rgba(252, 248, 241, 0.5), rgba(252, 248, 241, 0.2) 70%, rgba(252, 248, 241, 0.06)),
       linear-gradient(14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.4%) 5% 9% / 64px 17px no-repeat,
       linear-gradient(-14deg, rgba(148, 117, 88, 0.08) 10%, transparent 10.4%) 86% 82% / 66px 17px no-repeat;
-    opacity: 0.11;
+    opacity: 0.07;
   }
 
   .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.65rem; }
@@ -654,4 +659,11 @@ textarea { min-height: 130px; resize: vertical; }
   .decor-line--right { display: none; }
   .decor-star { left: 9%; top: 1rem; }
   .decor-mushroom { right: 9%; top: 1.2rem; }
+}
+
+@media (max-width: 390px) {
+  .menu-toggle {
+    font-size: 0.78rem;
+    padding: 0.48rem 0.64rem;
+  }
 }
