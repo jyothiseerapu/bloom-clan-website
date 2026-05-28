@@ -256,7 +256,7 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(118% 94% at 86% 96%, rgba(162, 129, 99, 0.16), transparent 66%),
     repeating-linear-gradient(44deg, rgba(255, 250, 241, 0.025) 0 2px, rgba(92, 67, 47, 0.015) 2px 4px);
   color: #5b412f;
-  padding: 3.5rem 0 1.7rem;
+  padding: 3.9rem 0 2rem;
   border-top: 1px solid rgba(104, 73, 50, 0.26);
 }
 .footer-paper-grain {
@@ -480,8 +480,8 @@ textarea { min-height: 130px; resize: vertical; }
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  min-height: 560px;
-  padding-bottom: clamp(3.9rem, 5.8vw, 5.4rem);
+  min-height: 510px;
+  padding-bottom: clamp(3rem, 4.8vw, 4.4rem);
   background:
     linear-gradient(180deg, rgba(252, 246, 236, 0.98) 0%, rgba(245, 234, 216, 0.97) 56%, rgba(236, 220, 198, 0.96) 100%),
     radial-gradient(130% 90% at 10% 14%, rgba(244, 226, 195, 0.14) 0%, rgba(244, 226, 195, 0) 60%),
@@ -490,9 +490,9 @@ textarea { min-height: 130px; resize: vertical; }
 .page-about .about-reading-panel {
   position: relative;
   z-index: 1;
-  width: min(100%, 66ch);
-  margin: clamp(0.4rem, 0.6vw, 0.9rem) auto 0;
-  padding: clamp(1.4rem, 2.4vw, 2.1rem) clamp(1.2rem, 2.3vw, 2rem) clamp(1.5rem, 2.5vw, 2.3rem);
+  width: min(100%, 72ch);
+  margin: clamp(0.25rem, 0.5vw, 0.7rem) auto 0;
+  padding: clamp(1.25rem, 2vw, 1.9rem) clamp(1.25rem, 2.5vw, 2.2rem) clamp(1.35rem, 2.2vw, 2rem);
   border-radius: 24px;
   background:
     linear-gradient(168deg, rgba(252, 246, 235, 0.95), rgba(246, 236, 220, 0.9)),
@@ -513,15 +513,16 @@ textarea { min-height: 130px; resize: vertical; }
 }
 .page-about .about-editorial--full::before {
   background:
-    radial-gradient(60% 90% at 2% 53%, rgba(146, 109, 75, 0.2), rgba(146, 109, 75, 0) 72%),
-    radial-gradient(60% 92% at 98% 52%, rgba(146, 109, 75, 0.2), rgba(146, 109, 75, 0) 72%),
-    radial-gradient(42% 46% at 50% 96%, rgba(152, 117, 84, 0.2), rgba(152, 117, 84, 0) 76%),
-    url("assets/images/about-bg-reference.png") 52% 58% / 112% auto no-repeat,
+    radial-gradient(62% 92% at 1% 54%, rgba(146, 109, 75, 0.22), rgba(146, 109, 75, 0) 72%),
+    radial-gradient(62% 94% at 99% 52%, rgba(146, 109, 75, 0.22), rgba(146, 109, 75, 0) 72%),
+    radial-gradient(42% 46% at 50% 97%, rgba(152, 117, 84, 0.18), rgba(152, 117, 84, 0) 76%),
+    linear-gradient(90deg, rgba(250, 243, 232, 0.54) 32%, rgba(250, 243, 232, 0.2) 50%, rgba(250, 243, 232, 0.54) 68%),
+    url("assets/images/about-bg-reference.png") 52% 56% / 110% auto no-repeat,
     radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px),
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px),
     radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
     radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
-  opacity: 0.66;
+  opacity: 0.74;
 }
 .page-about .about-editorial--full::after {
   background:
@@ -530,7 +531,7 @@ textarea { min-height: 130px; resize: vertical; }
     linear-gradient(-14deg, rgba(148, 117, 88, 0.07) 10%, transparent 10.5%) 84% 82% / 72px 18px no-repeat,
     radial-gradient(ellipse at 12% 86%, rgba(158, 132, 101, 0.07), transparent 68%),
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
-  opacity: 0.14;
+  opacity: 0.11;
 }
 
 
@@ -580,7 +581,7 @@ textarea { min-height: 130px; resize: vertical; }
   .page-about .about-editorial--full { min-height: 520px; padding-bottom: 4.1rem; }
   .page-about .about-reading-panel { width: min(100%, 62ch); padding: 1.3rem 1.15rem 1.95rem; border-radius: 20px; }
   .about-editorial--full h1 { font-size: clamp(1.95rem, 4.2vw, 2.4rem); }
-  .about-copy p { font-size: 1.05rem; line-height: 1.75; }
+  .about-copy p { font-size: 1.04rem; line-height: 1.7; }
   .page-about .about-editorial--full::before {
     background:
       url("assets/images/about-bg-reference.png") center 48% / 108% auto no-repeat,
@@ -641,7 +642,7 @@ textarea { min-height: 130px; resize: vertical; }
 
   .about-editorial { margin-top: 2.2rem; padding: 1.1rem 1rem; }
   .about-editorial--full { margin-top: 0.8rem; }
-  .page-about .about-editorial--full { min-height: 480px; padding-bottom: 3.75rem; }
+  .page-about .about-editorial--full { min-height: 470px; padding-bottom: 3.45rem; }
   .page-about .about-reading-panel {
     width: min(100%, 38ch);
     margin: 0.3rem 0 0;
@@ -659,10 +660,10 @@ textarea { min-height: 130px; resize: vertical; }
     background:
       linear-gradient(
         to right,
-        rgba(248, 241, 229, 0.95) 0%,
-        rgba(248, 241, 229, 0.87) 42%,
-        rgba(248, 241, 229, 0.58) 70%,
-        rgba(248, 241, 229, 0.36) 100%
+        rgba(248, 241, 229, 0.97) 0%,
+        rgba(248, 241, 229, 0.9) 42%,
+        rgba(248, 241, 229, 0.64) 70%,
+        rgba(248, 241, 229, 0.4) 100%
       ),
       url("assets/images/about-bg-mobile.png") 82% bottom / cover no-repeat,
       radial-gradient(72% 56% at 6% 8%, rgba(155, 122, 89, 0.09), rgba(155, 122, 89, 0) 70%),
@@ -686,7 +687,7 @@ textarea { min-height: 130px; resize: vertical; }
       0 0,
       0 0,
       0 0;
-    opacity: 0.72;
+    opacity: 0.68;
   }
   .page-about .about-editorial--full::after {
     background:
@@ -721,18 +722,18 @@ textarea { min-height: 130px; resize: vertical; }
   .page-custom-orders select { min-height: 2.28rem; padding-top: 0.56rem; padding-bottom: 0.56rem; }
 
   .footer-grid { grid-template-columns: 1fr; gap: 1.05rem; text-align: left; }
-  .site-footer { padding: 2rem 0 1.5rem; }
-  .footer-heading { font-size: 1.03rem; margin-bottom: 0.4rem; }
+  .site-footer { padding: 1.85rem 0 1.28rem; }
+  .footer-heading { font-size: 1.03rem; margin-bottom: 0.34rem; }
   .footer-body { font-size: 0.94rem; line-height: 1.45; }
   .footer-editorial a { font-size: 0.96rem; }
-  .footer-script { margin-top: 0.28rem; font-size: 0.98rem; }
+  .footer-script { margin-top: 0.22rem; font-size: 0.98rem; }
   .footer-heading,
   .footer-body,
   .footer-script,
   .footer-editorial a { text-align: left; }
-  .footer-editorial { justify-items: start; gap: 0.42rem; padding-top: 0; }
+  .footer-editorial { justify-items: start; gap: 0.36rem; padding-top: 0; }
   .footer-divider { width: min(220px, 92%); }
-  .footer-copyright { margin-top: 1.25rem; font-size: 0.79rem; }
+  .footer-copyright { margin-top: 1.05rem; font-size: 0.79rem; }
   .decor-tape { top: 0.95rem; width: 30px; left: calc(50% - 15px); }
   .decor-line--left,
   .decor-line--right { display: none; }
