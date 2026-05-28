@@ -146,35 +146,35 @@ main { padding: 5.6rem 0 4.2rem; }
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-.hero-inner { display: grid; grid-template-columns: 1.16fr 1fr; gap: 3.25rem; align-items: center; padding: clamp(2.2rem, 5vw, 4.6rem); min-height: clamp(480px, 62vh, 720px); }
-.hero-inner > img { width: 100%; max-height: clamp(320px, 56vh, 640px); object-fit: contain; object-position: center; border-radius: 16px; background: rgba(255,255,255,0.28); padding: clamp(0.4rem, 1vw, 0.8rem); }
+.hero-inner { display: grid; grid-template-columns: 1.08fr 0.92fr; gap: clamp(1.6rem, 2.6vw, 2.5rem); align-items: center; padding: clamp(1.7rem, 3.2vw, 2.7rem); min-height: clamp(380px, 49vh, 520px); }
+.hero-inner > img { width: 100%; max-height: clamp(300px, 44vh, 460px); object-fit: contain; object-position: center; border-radius: 16px; background: rgba(255,255,255,0.28); padding: clamp(0.35rem, 0.75vw, 0.6rem); }
 .hero h1 {
   color: color-mix(in oklab, var(--ink) 90%, #5a4433);
   font-family: "Cormorant Garamond", "Times New Roman", serif;
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.02em;
-  font-size: clamp(2.7rem, 6vw, 4.8rem);
+  font-size: clamp(2.1rem, 3.65vw, 3.35rem);
   margin: 0;
 }
-.lead { color: var(--muted-ink); font-size: clamp(1.08rem, 1.8vw, 1.34rem); max-width: 56ch; }
+.lead { color: var(--muted-ink); font-size: clamp(1rem, 1.25vw, 1.16rem); max-width: 52ch; margin-bottom: 0.2rem; }
 .storyline-note {
   position: relative;
   display: inline-block;
-  margin-top: 0.5rem;
-  padding-bottom: 0.55rem;
+  margin-top: 0.35rem;
+  padding-bottom: 0.38rem;
   color: #7c5d45;
   font-family: "Parisienne", "Brush Script MT", cursive;
-  font-size: clamp(1rem, 1.8vw, 1.18rem);
+  font-size: clamp(0.88rem, 1.1vw, 1rem);
   letter-spacing: 0.02em;
 }
 .storyline-note::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0.12rem;
+  bottom: 0.06rem;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   border-radius: 999px;
   transform-origin: left center;
   transform: scaleX(0);
