@@ -541,9 +541,15 @@ textarea { min-height: 130px; resize: vertical; }
   .brand-name { font-size: clamp(1.44rem, 1.36rem + 0.5vw, 1.98rem); }
   .brand-tagline { font-size: clamp(0.78rem, 0.74rem + 0.18vw, 0.98rem); }
   main { padding-top: 5.6rem; }
+  .page-about main { padding-top: 3.8rem; padding-bottom: 2.6rem; }
+  .page-about .about-editorial--full {
+    min-height: min(470px, calc(100vh - 7rem));
+    padding: clamp(0.9rem, 1.45vw, 1.3rem) clamp(1.2rem, 2.35vw, 2.05rem) clamp(1.2rem, 1.9vw, 1.75rem);
+  }
   .page-about .about-reading-panel {
-    width: min(100%, 64ch);
-    padding: clamp(0.7rem, 1.4vw, 1.25rem) clamp(1.05rem, 2.1vw, 1.8rem) clamp(0.95rem, 1.6vw, 1.35rem);
+    width: min(100%, 60ch);
+    margin-top: 0;
+    padding: clamp(0.58rem, 1.05vw, 0.95rem) clamp(0.9rem, 1.8vw, 1.55rem) clamp(0.7rem, 1.2vw, 1.05rem);
     background:
       radial-gradient(110% 88% at 50% 42%, rgba(252, 248, 241, 0.58), rgba(252, 248, 241, 0.28) 58%, rgba(252, 248, 241, 0) 78%),
       linear-gradient(180deg, rgba(252, 246, 236, 0.28), rgba(252, 246, 236, 0.14));
@@ -551,9 +557,19 @@ textarea { min-height: 130px; resize: vertical; }
     box-shadow: none;
     backdrop-filter: none;
   }
+  .page-about .about-editorial--full h1 {
+    margin-bottom: 0.72rem;
+    font-size: clamp(1.72rem, 2.45vw, 2.2rem);
+    line-height: 1.06;
+  }
+  .page-about .about-editorial--full .about-copy { gap: 0.52rem; }
+  .page-about .about-editorial--full .about-copy p {
+    font-size: clamp(0.98rem, 1.08vw, 1.07rem);
+    line-height: 1.6;
+  }
+  .page-about .about-action { margin-top: 1rem; padding-bottom: 0; }
   .page-about .about-editorial--full::before { opacity: 0.86; }
   .page-about .about-editorial--full::after { opacity: 0.09; }
-  .page-about .about-editorial--full .about-copy p { font-size: clamp(1.02rem, 1.26vw, 1.16rem); }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
