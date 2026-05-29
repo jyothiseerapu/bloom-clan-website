@@ -471,7 +471,7 @@ textarea { min-height: 130px; resize: vertical; }
 .about-editorial--full { margin-top: 0; }
 .about-editorial--full h1 {
   margin: 0 0 1.3rem;
-  font-size: clamp(2.2rem, 4.1vw, 3.2rem);
+  font-size: clamp(1.87rem, 3.5vw, 2.72rem);
   line-height: 1.1;
 }
 
@@ -490,7 +490,7 @@ textarea { min-height: 130px; resize: vertical; }
 .page-about .about-reading-panel {
   position: relative;
   z-index: 1;
-  width: min(100%, 72ch);
+  width: min(100%, 66ch);
   margin: clamp(0.25rem, 0.5vw, 0.7rem) auto 0;
   padding: clamp(1.25rem, 2vw, 1.9rem) clamp(1.25rem, 2.5vw, 2.2rem) clamp(1.35rem, 2.2vw, 2rem);
   border-radius: 24px;
@@ -517,7 +517,7 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(62% 94% at 99% 52%, rgba(146, 109, 75, 0.22), rgba(146, 109, 75, 0) 72%),
     radial-gradient(42% 46% at 50% 97%, rgba(152, 117, 84, 0.18), rgba(152, 117, 84, 0) 76%),
     linear-gradient(90deg, rgba(250, 243, 232, 0.54) 32%, rgba(250, 243, 232, 0.2) 50%, rgba(250, 243, 232, 0.54) 68%),
-    url("assets/images/about-bg-reference.png") 52% 56% / 110% auto no-repeat,
+    url("assets/images/about-bg-reference.png") 52% 56% / 104% auto no-repeat,
     radial-gradient(circle at 9% 12%, rgba(94, 71, 45, 0.09) 0 1px, transparent 1.8px),
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px),
     radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
@@ -541,6 +541,7 @@ textarea { min-height: 130px; resize: vertical; }
   .brand-name { font-size: clamp(1.44rem, 1.36rem + 0.5vw, 1.98rem); }
   .brand-tagline { font-size: clamp(0.78rem, 0.74rem + 0.18vw, 0.98rem); }
   main { padding-top: 5.6rem; }
+  .page-about .about-editorial--full .about-copy p { font-size: clamp(1.02rem, 1.26vw, 1.16rem); }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -652,10 +653,14 @@ textarea { min-height: 130px; resize: vertical; }
       linear-gradient(168deg, rgba(249, 241, 229, 0.96), rgba(244, 233, 216, 0.9)),
       radial-gradient(125% 86% at 10% 10%, rgba(255, 251, 245, 0.56), rgba(255, 251, 245, 0));
   }
-  .about-editorial--full h1 { font-size: clamp(1.7rem, 7.1vw, 2.05rem); margin-bottom: 0.85rem; }
+  .about-editorial--full h1 { font-size: clamp(1.58rem, 6.6vw, 1.9rem); margin-bottom: 0.85rem; }
   .about-copy { gap: 0.7rem; }
   .about-copy p { font-size: 0.92rem; line-height: 1.58; }
   .about-action { margin-top: 1.7rem; padding-bottom: 0.5rem; }
+  .page-about .about-action .cta-btn {
+    padding: 0.78rem 1.18rem;
+    font-size: 0.95rem;
+  }
   .page-about .about-editorial--full::before {
     background:
       linear-gradient(
