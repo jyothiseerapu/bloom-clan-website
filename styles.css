@@ -553,6 +553,7 @@ textarea { min-height: 130px; resize: vertical; }
   .page-about .about-reading-panel {
     width: min(100%, 60ch);
     margin-top: 0;
+    transform: translateY(clamp(2.5rem, 5.2vh, 3.75rem));
     padding: clamp(0.58rem, 1.05vw, 0.95rem) clamp(0.9rem, 1.8vw, 1.55rem) clamp(0.7rem, 1.2vw, 1.05rem);
     background:
       radial-gradient(110% 88% at 50% 42%, rgba(252, 248, 241, 0.58), rgba(252, 248, 241, 0.28) 58%, rgba(252, 248, 241, 0) 78%),
