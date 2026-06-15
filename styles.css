@@ -533,7 +533,45 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
   opacity: 0.11;
 }
+.page-about .about-twinkles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.page-about .about-twinkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  opacity: 0.2;
+  animation: about-soft-twinkle 5.4s ease-in-out infinite;
+}
+.page-about .about-twinkle::before,
+.page-about .about-twinkle::after {
+  content: "";
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 100%;
+  height: 1px;
+  border-radius: 999px;
+  background: rgba(94, 71, 45, 0.28);
+  transform: translate(-50%, -50%);
+}
+.page-about .about-twinkle::after { transform: translate(-50%, -50%) rotate(90deg); }
+.page-about .about-twinkle--one { top: 18%; left: 12%; animation-delay: -0.8s; }
+.page-about .about-twinkle--two { top: 16%; right: 13%; animation-delay: -3.2s; animation-duration: 4.8s; }
+.page-about .about-twinkle--three { right: 16%; bottom: 18%; animation-delay: -1.9s; animation-duration: 5.9s; }
+.page-about .about-twinkle--four { left: 10%; bottom: 20%; animation-delay: -4.4s; animation-duration: 5.2s; }
 
+@keyframes about-soft-twinkle {
+  0%, 100% { opacity: 0.14; }
+  45% { opacity: 0.38; }
+  70% { opacity: 0.22; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-about .about-twinkle { animation: none; }
+}
 
 @media (min-width: 1024px) {
   .header-inner { min-height: 88px; padding: 0.92rem 0; }
