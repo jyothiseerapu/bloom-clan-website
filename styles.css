@@ -522,7 +522,14 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px),
     radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
     radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
-  opacity: 0.74;
+  --about-artwork-opacity: 0.74;
+  --about-artwork-opacity-breathe: 0.76;
+  --about-artwork-lift: -2px;
+  --about-artwork-settle: 3px;
+  opacity: var(--about-artwork-opacity);
+  transform: translate3d(0, var(--about-artwork-lift), 0);
+  animation: about-paper-breathe 16s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 .page-about .about-editorial--full::after {
   background:
@@ -533,44 +540,22 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
   opacity: 0.11;
 }
-.page-about .about-twinkles {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-.page-about .about-twinkle {
-  position: absolute;
-  width: 4px;
-  height: 4px;
-  opacity: 0.2;
-  animation: about-soft-twinkle 5.4s ease-in-out infinite;
-}
-.page-about .about-twinkle::before,
-.page-about .about-twinkle::after {
-  content: "";
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 100%;
-  height: 1px;
-  border-radius: 999px;
-  background: rgba(94, 71, 45, 0.28);
-  transform: translate(-50%, -50%);
-}
-.page-about .about-twinkle::after { transform: translate(-50%, -50%) rotate(90deg); }
-.page-about .about-twinkle--one { top: 18%; left: 12%; animation-delay: -0.8s; }
-.page-about .about-twinkle--two { top: 16%; right: 13%; animation-delay: -3.2s; animation-duration: 4.8s; }
-.page-about .about-twinkle--three { right: 16%; bottom: 18%; animation-delay: -1.9s; animation-duration: 5.9s; }
-.page-about .about-twinkle--four { left: 10%; bottom: 20%; animation-delay: -4.4s; animation-duration: 5.2s; }
-
-@keyframes about-soft-twinkle {
-  0%, 100% { opacity: 0.14; }
-  45% { opacity: 0.38; }
-  70% { opacity: 0.22; }
+@keyframes about-paper-breathe {
+  0%, 100% {
+    opacity: var(--about-artwork-opacity);
+    transform: translate3d(0, var(--about-artwork-lift), 0);
+  }
+  50% {
+    opacity: var(--about-artwork-opacity-breathe);
+    transform: translate3d(0, var(--about-artwork-settle), 0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .page-about .about-twinkle { animation: none; }
+  .page-about .about-editorial--full::before {
+    animation: none;
+    transform: none;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -626,7 +611,8 @@ textarea { min-height: 130px; resize: vertical; }
       radial-gradient(circle at 17% 9%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px),
       radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
       radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
-    opacity: 0.9;
+    --about-artwork-opacity: 0.9;
+    --about-artwork-opacity-breathe: 0.92;
   }
   .page-about .about-editorial--full::after { opacity: 0.09; }
 }
@@ -675,7 +661,11 @@ textarea { min-height: 130px; resize: vertical; }
       url("assets/images/about-bg-reference.png") center 48% / 108% auto no-repeat,
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
-    opacity: 0.38;
+    --about-artwork-opacity: 0.38;
+    --about-artwork-opacity-breathe: 0.39;
+    --about-artwork-lift: -1px;
+    --about-artwork-settle: 2px;
+    animation-duration: 18s;
   }
   .page-about .about-editorial--full::after { opacity: 0.08; }
 }
@@ -779,7 +769,11 @@ textarea { min-height: 130px; resize: vertical; }
       0 0,
       0 0,
       0 0;
-    opacity: 0.68;
+    --about-artwork-opacity: 0.68;
+    --about-artwork-opacity-breathe: 0.69;
+    --about-artwork-lift: -1px;
+    --about-artwork-settle: 2px;
+    animation-duration: 18s;
   }
   .page-about .about-editorial--full::after {
     background:
