@@ -518,13 +518,12 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
     radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
   --about-artwork-opacity: 0.74;
-  --about-artwork-opacity-breathe: 0.76;
-  --about-artwork-lift: -2px;
-  --about-artwork-settle: 3px;
+  --about-artwork-lift: -16px;
+  --about-artwork-settle: 16px;
   opacity: var(--about-artwork-opacity);
   transform: translate3d(0, var(--about-artwork-lift), 0);
-  animation: about-paper-breathe 16s ease-in-out infinite;
-  will-change: transform, opacity;
+  animation: about-paper-breathe 6s ease-in-out infinite alternate;
+  will-change: transform;
 }
 .page-about .about-editorial--full::after {
   background:
@@ -536,12 +535,10 @@ textarea { min-height: 130px; resize: vertical; }
   opacity: 0.11;
 }
 @keyframes about-paper-breathe {
-  0%, 100% {
-    opacity: var(--about-artwork-opacity);
+  from {
     transform: translate3d(0, var(--about-artwork-lift), 0);
   }
-  50% {
-    opacity: var(--about-artwork-opacity-breathe);
+  to {
     transform: translate3d(0, var(--about-artwork-settle), 0);
   }
 }
@@ -607,7 +604,6 @@ textarea { min-height: 130px; resize: vertical; }
       radial-gradient(circle at 91% 14%, rgba(94, 71, 45, 0.09) 0 1.1px, transparent 2px),
       radial-gradient(circle at 83% 87%, rgba(94, 71, 45, 0.07) 0 1.1px, transparent 2px);
     --about-artwork-opacity: 0.9;
-    --about-artwork-opacity-breathe: 0.92;
   }
   .page-about .about-editorial--full::after { opacity: 0.09; }
 }
@@ -657,10 +653,6 @@ textarea { min-height: 130px; resize: vertical; }
       radial-gradient(circle at 10% 11%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px),
       radial-gradient(circle at 88% 15%, rgba(94, 71, 45, 0.07) 0 1px, transparent 1.8px);
     --about-artwork-opacity: 0.38;
-    --about-artwork-opacity-breathe: 0.39;
-    --about-artwork-lift: -1px;
-    --about-artwork-settle: 2px;
-    animation-duration: 18s;
   }
   .page-about .about-editorial--full::after { opacity: 0.08; }
 }
@@ -765,12 +757,6 @@ textarea { min-height: 130px; resize: vertical; }
       0 0,
       0 0;
     --about-artwork-opacity: 0.68;
-    --about-artwork-opacity-breathe: 0.69;
-    --about-artwork-lift: -1px;
-    --about-artwork-settle: 2px;
-    animation: none;
-    transform: none;
-    will-change: auto;
   }
   .page-about .about-editorial--full::after {
     background:
