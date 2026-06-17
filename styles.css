@@ -531,7 +531,8 @@ textarea { min-height: 130px; resize: vertical; }
 }
 /* About page ambient animations: the paper breathes while content stays still. */
 .page-about .about-editorial--full::before {
-  animation: about-paper-breathe 16s ease-in-out infinite alternate;
+  animation: about-paper-breathe 2s ease-in-out infinite alternate;
+  outline: 2px solid red;
   will-change: transform;
 }
 .page-about .about-editorial--full::after {
@@ -548,8 +549,8 @@ textarea { min-height: 130px; resize: vertical; }
   filter: none;
 }
 @keyframes about-paper-breathe {
-  from { transform: translateY(-2px); }
-  to { transform: translateY(3px); }
+  from { transform: translateY(0); }
+  to { transform: translateY(-40px); }
 }
 @keyframes about-light-shimmer {
   from { opacity: 0.08; }
