@@ -529,87 +529,15 @@ textarea { min-height: 130px; resize: vertical; }
     radial-gradient(ellipse at 88% 17%, rgba(158, 132, 101, 0.07), transparent 68%);
   opacity: 0.11;
 }
-/* About page micro-animations: intentionally quiet, decorative, and isolated. */
-.page-about .about-micro-accents {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-.page-about .about-twinkle,
-.page-about .about-note-sway,
-.page-about .about-mushroom-blink {
-  position: absolute;
-  display: block;
-  pointer-events: none;
-}
-.page-about .about-twinkle {
-  width: 8px;
-  height: 8px;
-  color: rgba(96, 66, 38, 0.58);
-  opacity: 0.18;
-  transform: translateZ(0);
-  animation: about-soft-twinkle 10.5s ease-in-out infinite;
-  will-change: opacity;
-}
-.page-about .about-twinkle::before,
-.page-about .about-twinkle::after {
-  content: "";
-  position: absolute;
-  inset: 50% auto auto 50%;
-  width: 100%;
-  height: 1.25px;
-  border-radius: 999px;
-  background: currentColor;
-  box-shadow: 0 0 6px rgba(177, 132, 74, 0.12);
-  transform: translate(-50%, -50%);
-}
-.page-about .about-twinkle::after { transform: translate(-50%, -50%) rotate(90deg); }
-.page-about .about-twinkle--one { left: 12%; top: 22%; width: 9px; height: 9px; animation-duration: 11s; animation-delay: -2.6s; }
-.page-about .about-twinkle--two { right: 12%; top: 24%; width: 7px; height: 7px; animation-duration: 12.5s; animation-delay: -7.5s; }
-.page-about .about-twinkle--three { right: 9%; bottom: 23%; width: 8px; height: 8px; animation-duration: 10.5s; animation-delay: -4.1s; }
-.page-about .about-twinkle--four { left: 10%; bottom: 29%; width: 7px; height: 7px; animation-duration: 13s; animation-delay: -9.2s; }
-.page-about .about-twinkle--five { left: 27%; top: 10%; width: 8px; height: 8px; animation-duration: 11.8s; animation-delay: -5.4s; }
-.page-about .about-twinkle--six { right: 27%; bottom: 12%; width: 9px; height: 9px; animation-duration: 12.8s; animation-delay: -1.8s; }
-.page-about .about-note-sway {
-  right: clamp(6.5rem, 13.3vw, 12.2rem);
-  top: clamp(2.2rem, 7vw, 4.75rem);
-  width: clamp(62px, 8.6vw, 104px);
-  aspect-ratio: 1.12;
-  border-radius: 4px;
-  background: linear-gradient(145deg, rgba(251, 241, 222, 0.34), rgba(231, 210, 180, 0.23));
-  border: 1px solid rgba(128, 91, 56, 0.16);
-  box-shadow:
-    0 7px 18px rgba(102, 71, 43, 0.08),
-    inset 0 0 0 1px rgba(255, 248, 236, 0.2);
-  opacity: 0.38;
-  transform-origin: 48% 8%;
-  animation: about-note-settle 18s ease-in-out infinite;
+/* About page ambient animations: the paper breathes while content stays still. */
+.page-about .about-editorial--full::before {
+  animation: about-paper-breathe 16s ease-in-out infinite alternate;
   will-change: transform;
 }
-.page-about .about-mushroom-blink {
-  left: clamp(6.75rem, 14.4vw, 13.35rem);
-  bottom: clamp(3rem, 8.3vw, 5.85rem);
-  width: clamp(20px, 2.65vw, 32px);
-  height: clamp(8px, 1vw, 12px);
-  opacity: 0;
-  transform: translateZ(0);
-  animation: about-mushroom-blink 12s linear infinite;
+.page-about .about-editorial--full::after {
+  animation: about-light-shimmer 12s ease-in-out infinite alternate;
   will-change: opacity;
 }
-.page-about .about-mushroom-blink::before,
-.page-about .about-mushroom-blink::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: clamp(5px, 0.62vw, 7px);
-  height: 1.5px;
-  border-radius: 999px;
-  background: rgba(43, 34, 27, 0.74);
-  transform: translateY(-50%) rotate(-3deg);
-}
-.page-about .about-mushroom-blink::before { left: 21%; }
-.page-about .about-mushroom-blink::after { right: 21%; transform: translateY(-50%) rotate(3deg); }
 .page-about .about-action .cta-btn {
   transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease, color 220ms ease;
 }
@@ -619,29 +547,22 @@ textarea { min-height: 130px; resize: vertical; }
   box-shadow: 0 10px 24px rgba(154, 111, 68, 0.24);
   filter: none;
 }
-@keyframes about-soft-twinkle {
-  0%, 34%, 100% { opacity: 0.18; }
-  48% { opacity: 0.48; }
-  62% { opacity: 0.24; }
+@keyframes about-paper-breathe {
+  from { transform: translateY(-2px); }
+  to { transform: translateY(3px); }
 }
-@keyframes about-note-settle {
-  0%, 100% { transform: rotate(-0.48deg); }
-  50% { transform: rotate(0.58deg); }
-}
-@keyframes about-mushroom-blink {
-  0%, 91.5%, 93.6%, 100% { opacity: 0; }
-  92.2%, 93.4% { opacity: 0.74; }
+@keyframes about-light-shimmer {
+  from { opacity: 0.08; }
+  to { opacity: 0.16; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .page-about .about-twinkle,
-  .page-about .about-note-sway,
-  .page-about .about-mushroom-blink {
+  .page-about .about-editorial--full::before,
+  .page-about .about-editorial--full::after {
     animation: none;
+    will-change: auto;
   }
-  .page-about .about-twinkle { opacity: 0.18; }
-  .page-about .about-note-sway { transform: none; }
-  .page-about .about-mushroom-blink { opacity: 0; }
+  .page-about .about-editorial--full::before { transform: none; }
   .page-about .about-action .cta-btn { transition: none; }
   .page-about .about-action .cta-btn:hover,
   .page-about .about-action .cta-btn:focus-visible {
